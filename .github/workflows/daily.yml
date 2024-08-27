@@ -1,0 +1,68 @@
+name: Daily JSON Update
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Runs every day at midnight
+  workflow_dispatch
+
+jobs:
+  update-json:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          cache: 'pip' # caching pip dependencies
+      - run: pip install -r requirements.txt
+
+      - name: Fetch current tcbs
+        run: |
+          python fetch_tcbs.py > new_tcbs.json
+
+      - name: Compare tcbs
+        run: |
+          # Check if tcbs.json exists
+          if [ ! -f tcbs.json ]; then
+            echo "Error: tcbs.json does not exist."
+            exit 1
+          fi
+
+          # Check sizes of the JSON files
+          previous_size=$(stat -c%s "tcbs.json")
+          current_size=$(stat -c%s "new_tcbs.json")
+
+          if [ "$current_size" -lt "$previous_size" ]; then
+            echo "Error: new_tcbs.json is smaller than tcbs.json."
+            exit 1
+          fi
+
+      - name: Check for differences
+        id: check_diff
+        run: |
+          if cmp --silent -- new_tcbs.json tcbs.json; then
+            echo "differences=false" >> $GITHUB_ENV
+          else
+            echo "differences=true" >> $GITHUB_ENV
+          fi
+
+      - name: Generate HTML from log
+        if: env.differences == 'true'
+        run: |
+          mkdir -p diffs
+          python generate_diff_html.py tcbs.json new_tcbs.json > diffs/$(date +%Y-%m-%d).html
+          bash generate_index.sh > index.html
+
+      - name: Create Pull Request
+        if: env.differences == 'true'
+        id: create_pr
+        run: |
+          cdate=$(date +%Y-%m-%d)
+          git config --local user.email "bot@daily.com"
+          git config --local user.name "Daily Bot"
+          mv new_tcbs.json tcbs.json
+          git add tcbs.json
+          git add diffs/*
+          git add index.html
+          git commit -m "TCB update ${cdate}"
+          git push origin HEAD:main
