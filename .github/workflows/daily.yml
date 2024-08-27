@@ -1,7 +1,7 @@
 name: Daily JSON Update
 
 on:
-  workflow_dispatch
+  pull_request
   #schedule:
   #  - cron: '0 0 * * *'  # Runs every day at midnight
 
@@ -65,14 +65,12 @@ jobs:
         if: env.differences == 'true' && env.existing_pr == '0'
         id: create_pr
         run: |
+          cdate=$(date +%Y-%m-%d)
           git config --local user.email "bot@daily.com"
           git config --local user.name "Daily Bot"
-          git checkout -b update-tcb
           mv new_tcbs.json tcbs.json
           git add tcbs.json
           git add diffs/*
           git add index.html
-          git commit -m "TCB update $(date +%Y-%m-%d)"
-          pr_url=$(gh pr create --title "TCB update $(date +%Y-%m-%d)" --body "Updated TCB" --json url -q .url)  # Capture the PR URL
-          gh pr merge "$pr_url" --merge
-          echo "pr_url=$pr_url" >> $GITHUB_ENV  # Set the PR URL as an environment variable
+          git commit -m "TCB update ${cdate}"
+          git push origin HEAD:main
