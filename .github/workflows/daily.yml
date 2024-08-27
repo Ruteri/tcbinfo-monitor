@@ -1,8 +1,9 @@
 name: Daily JSON Update
 
 on:
-  schedule:
-    - cron: '0 0 * * *'  # Runs every day at midnight
+  workflow_dispatch
+  #schedule:
+  #  - cron: '0 0 * * *'  # Runs every day at midnight
 
 jobs:
   update-json:
