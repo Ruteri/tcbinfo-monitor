@@ -1,0 +1,77 @@
+name: Daily JSON Update
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Runs every day at midnight
+
+jobs:
+  update-json:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          cache: 'pip' # caching pip dependencies
+      - run: pip install -r requirements.txt
+      - name: Check for existing PRs
+        id: check_pr
+        run: |
+          existing_pr=$(curl -s "https://api.github.com/repos/${{ github.repository }}/pulls?state=open&head=${{ github.repository }}:update-json" | jq '. | length')
+          echo "existing_pr=$existing_pr" >> $GITHUB_ENV
+
+      - name: Fetch current tcbs
+        if: env.existing_pr == '0'
+        run: |
+          python fetch_tcbs.py > new_tcbs.json
+
+      - name: Compare tcbs
+        if: env.existing_pr == '0'
+        run: |
+          # Check if tcbs.json exists
+          if [ ! -f tcbs.json ]; then
+            echo "Error: tcbs.json does not exist."
+            exit 1
+          fi
+
+          # Check sizes of the JSON files
+          previous_size=$(stat -c%s "tcbs.json")
+          current_size=$(stat -c%s "new_tcbs.json")
+
+          if [ "$current_size" -lt "$previous_size" ]; then
+            echo "Error: new_tcbs.json is smaller than tcbs.json."
+            exit 1
+          fi
+
+      - name: Check for differences
+        if: env.existing_pr == '0'
+        id: check_diff
+        run: |
+          if cmp --silent -- new_tcbs.json tcbs.json; then
+            echo "differences=false" >> $GITHUB_ENV
+          else
+            echo "differences=true" >> $GITHUB_ENV
+          fi
+
+      - name: Generate HTML from log
+        if: env.differences == 'true' && env.existing_pr == '0'
+        run: |
+          mkdir -p diffs
+          python generate_diff_html.py tcbs.json new_tcbs.json > diffs/$(date +%Y-%m-%d).html
+          bash generate_index.sh > index.html
+
+      - name: Create Pull Request
+        if: env.differences == 'true' && env.existing_pr == '0'
+        id: create_pr
+        run: |
+          git config --local user.email "bot@daily.com"
+          git config --local user.name "Daily Bot"
+          git checkout -b update-tcb
+          mv new_tcbs.json tcbs.json
+          git add tcbs.json
+          git add diffs/*
+          git add index.html
+          git commit -m "TCB update $(date +%Y-%m-%d)"
+          pr_url=$(gh pr create --title "TCB update $(date +%Y-%m-%d)" --body "Updated TCB" --json url -q .url)  # Capture the PR URL
+          gh pr merge "$pr_url" --merge
+          echo "pr_url=$pr_url" >> $GITHUB_ENV  # Set the PR URL as an environment variable
