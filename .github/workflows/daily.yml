@@ -49,7 +49,8 @@ jobs:
         if: env.differences == 'true'
         run: |
           mkdir -p diffs
-          python generate_diff_html.py tcbs.json new_tcbs.json > diffs/$(date +%Y-%m-%d).html
+          cdate=$(date +%Y-%m-%d)
+          python generate_diff_html.py tcbs.json new_tcbs.json > diffs/${cdate}.html || rm diffs/${cdate}.html # exits with (1) if no changes, in which case remove the file
           bash generate_index.sh > index.html
 
       - name: Create Pull Request
