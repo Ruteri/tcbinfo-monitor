@@ -45,7 +45,7 @@ jobs:
             echo "differences=true" >> $GITHUB_ENV
           fi
 
-      - name: Generate HTML from log
+      - name: Generate diffs HTML
         if: env.differences == 'true'
         run: |
           mkdir -p diffs
@@ -62,7 +62,7 @@ jobs:
           git config --local user.name "Daily Bot"
           mv new_tcbs.json tcbs.json
           git add tcbs.json
-          git add diffs/*
+          git add diffs/* || true
           git add index.html
           git commit -m "TCB update ${cdate}"
           git push origin HEAD:main
