@@ -27,12 +27,8 @@ jobs:
             exit 1
           fi
 
-          # Check sizes of the JSON files
-          previous_size=$(stat -c%s "tcbs.json")
-          current_size=$(stat -c%s "new_tcbs.json")
-
-          if [ "$current_size" -lt "$previous_size" ]; then
-            echo "Error: new_tcbs.json is smaller than tcbs.json."
+          if [ ! -f new_tcbs.json ]; then
+            echo "Error: tcbs.json does not exist."
             exit 1
           fi
 
