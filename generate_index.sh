@@ -40,7 +40,7 @@ cat <<EOF
 <body>
 EOF
 
-cat diffs/* 2>/dev/null
+ls -rt diffs/* | xargs cat 2>/dev/null
 
 cat <<EOF
 </body>
