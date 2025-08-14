@@ -3,13 +3,81 @@
     "tcbInfo": {
       "id": "SGX",
       "version": 3,
-      "issueDate": "2025-08-13T00:45:01Z",
-      "nextUpdate": "2025-09-12T00:45:01Z",
+      "issueDate": "2025-08-14T01:01:52Z",
+      "nextUpdate": "2025-09-13T01:01:52Z",
       "fmspc": "00A06D080000",
       "pceId": "0000",
       "tcbType": 0,
-      "tcbEvaluationDataNumber": 19,
+      "tcbEvaluationDataNumber": 20,
       "tcbLevels": [
+        {
+          "tcb": {
+            "sgxtcbcomponents": [
+              {
+                "svn": 4,
+                "category": "BIOS",
+                "type": "Early Microcode Update"
+              },
+              {
+                "svn": 4,
+                "category": "OS/VMM",
+                "type": "SGX Late Microcode Update"
+              },
+              {
+                "svn": 2,
+                "category": "OS/VMM",
+                "type": "TXT SINIT"
+              },
+              {
+                "svn": 2,
+                "category": "BIOS"
+              },
+              {
+                "svn": 4,
+                "category": "BIOS"
+              },
+              {
+                "svn": 1,
+                "category": "BIOS"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 2,
+                "category": "OS/VMM",
+                "type": "SEAMLDR ACM"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              }
+            ],
+            "pcesvn": 13
+          },
+          "tcbDate": "2025-08-13T00:00:00Z",
+          "tcbStatus": "UpToDate"
+        },
         {
           "tcb": {
             "sgxtcbcomponents": [
@@ -76,7 +144,11 @@
             "pcesvn": 13
           },
           "tcbDate": "2025-05-14T00:00:00Z",
-          "tcbStatus": "UpToDate"
+          "tcbStatus": "OutOfDate",
+          "advisoryIDs": [
+            "INTEL-SA-01313",
+            "INTEL-SA-01367"
+          ]
         },
         {
           "tcb": {
@@ -144,22 +216,26 @@
             "pcesvn": 5
           },
           "tcbDate": "2018-01-04T00:00:00Z",
-          "tcbStatus": "OutOfDate"
+          "tcbStatus": "OutOfDate",
+          "advisoryIDs": [
+            "INTEL-SA-01313",
+            "INTEL-SA-01367"
+          ]
         }
       ]
     },
-    "signature": "725f97ba531e56fe79063f5150d5cc98d46d6a0ed4c8de9fa8162602c2e501a8b4095a51793ced5ddbb0bb838ed44c104dd9d89d708af90ab7e1056777667a65"
+    "signature": "c62c9078ada10b6929b694aaa2352b036cf76f9322cc8acbddc068842078d121417d697600a6629e5620c222fbc471d7a44e018df4c57bdc4de38fd07776a3e4"
   },
   {
     "tcbInfo": {
       "id": "TDX",
       "version": 3,
-      "issueDate": "2025-08-13T00:45:01Z",
-      "nextUpdate": "2025-09-12T00:45:01Z",
+      "issueDate": "2025-08-14T01:01:51Z",
+      "nextUpdate": "2025-09-13T01:01:51Z",
       "fmspc": "00A06D080000",
       "pceId": "0000",
       "tcbType": 0,
-      "tcbEvaluationDataNumber": 19,
+      "tcbEvaluationDataNumber": 20,
       "tdxModule": {
         "mrsigner": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
         "attributes": "0000000000000000",
@@ -174,10 +250,17 @@
           "tcbLevels": [
             {
               "tcb": {
+                "isvsvn": 5
+              },
+              "tcbDate": "2025-08-13T00:00:00Z",
+              "tcbStatus": "UpToDate"
+            },
+            {
+              "tcb": {
                 "isvsvn": 3
               },
               "tcbDate": "2025-05-14T00:00:00Z",
-              "tcbStatus": "UpToDate"
+              "tcbStatus": "OutOfDate"
             }
           ]
         },
@@ -189,10 +272,17 @@
           "tcbLevels": [
             {
               "tcb": {
+                "isvsvn": 11
+              },
+              "tcbDate": "2025-08-13T00:00:00Z",
+              "tcbStatus": "UpToDate"
+            },
+            {
+              "tcb": {
                 "isvsvn": 6
               },
               "tcbDate": "2025-05-14T00:00:00Z",
-              "tcbStatus": "UpToDate"
+              "tcbStatus": "OutOfDate"
             },
             {
               "tcb": {
@@ -220,6 +310,130 @@
         }
       ],
       "tcbLevels": [
+        {
+          "tcb": {
+            "sgxtcbcomponents": [
+              {
+                "svn": 4,
+                "category": "BIOS",
+                "type": "Early Microcode Update"
+              },
+              {
+                "svn": 4,
+                "category": "OS/VMM",
+                "type": "SGX Late Microcode Update"
+              },
+              {
+                "svn": 2,
+                "category": "OS/VMM",
+                "type": "TXT SINIT"
+              },
+              {
+                "svn": 2,
+                "category": "BIOS"
+              },
+              {
+                "svn": 4,
+                "category": "BIOS"
+              },
+              {
+                "svn": 1,
+                "category": "BIOS"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 2,
+                "category": "OS/VMM",
+                "type": "SEAMLDR ACM"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              }
+            ],
+            "pcesvn": 13,
+            "tdxtcbcomponents": [
+              {
+                "svn": 5,
+                "category": "OS/VMM",
+                "type": "TDX Module"
+              },
+              {
+                "svn": 0,
+                "category": "OS/VMM",
+                "type": "TDX Module"
+              },
+              {
+                "svn": 4,
+                "category": "OS/VMM",
+                "type": "TDX Late Microcode Update"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              }
+            ]
+          },
+          "tcbDate": "2025-08-13T00:00:00Z",
+          "tcbStatus": "UpToDate"
+        },
         {
           "tcb": {
             "sgxtcbcomponents": [
@@ -342,7 +556,15 @@
             ]
           },
           "tcbDate": "2025-05-14T00:00:00Z",
-          "tcbStatus": "UpToDate"
+          "tcbStatus": "OutOfDate",
+          "advisoryIDs": [
+            "INTEL-SA-01192",
+            "INTEL-SA-01245",
+            "INTEL-SA-01311",
+            "INTEL-SA-01312",
+            "INTEL-SA-01313",
+            "INTEL-SA-01367"
+          ]
         },
         {
           "tcb": {
@@ -466,23 +688,99 @@
             ]
           },
           "tcbDate": "2018-01-04T00:00:00Z",
-          "tcbStatus": "OutOfDate"
+          "tcbStatus": "OutOfDate",
+          "advisoryIDs": [
+            "INTEL-SA-01192",
+            "INTEL-SA-01245",
+            "INTEL-SA-01311",
+            "INTEL-SA-01312",
+            "INTEL-SA-01313",
+            "INTEL-SA-01367"
+          ]
         }
       ]
     },
-    "signature": "5c37a01a8953e21db3e1c9b517239d7c4ea87726e94312e95735ee7b7b4508a649a655676ec9015a035c234abb9f0f980abc194f5ed7ca511953dd18d7dca2de"
+    "signature": "075dc397ab0dd988504f41f4c585b53b00c9175730540ea8d7b6435f754d2e5116e58a9895483959a957dc7006323f187d9052571b6fd87cb5f6900289c789e4"
   },
   {
     "tcbInfo": {
       "id": "SGX",
       "version": 3,
-      "issueDate": "2025-08-13T01:01:36Z",
-      "nextUpdate": "2025-09-12T01:01:36Z",
+      "issueDate": "2025-08-14T01:01:55Z",
+      "nextUpdate": "2025-09-13T01:01:55Z",
       "fmspc": "70A06D070000",
       "pceId": "0000",
       "tcbType": 0,
-      "tcbEvaluationDataNumber": 19,
+      "tcbEvaluationDataNumber": 20,
       "tcbLevels": [
+        {
+          "tcb": {
+            "sgxtcbcomponents": [
+              {
+                "svn": 4,
+                "category": "BIOS",
+                "type": "Early Microcode Update"
+              },
+              {
+                "svn": 4,
+                "category": "OS/VMM",
+                "type": "SGX Late Microcode Update"
+              },
+              {
+                "svn": 2,
+                "category": "OS/VMM",
+                "type": "TXT SINIT"
+              },
+              {
+                "svn": 2,
+                "category": "BIOS"
+              },
+              {
+                "svn": 4,
+                "category": "BIOS"
+              },
+              {
+                "svn": 1,
+                "category": "BIOS"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 2,
+                "category": "OS/VMM",
+                "type": "SEAMLDR ACM"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              }
+            ],
+            "pcesvn": 13
+          },
+          "tcbDate": "2025-08-13T00:00:00Z",
+          "tcbStatus": "UpToDate"
+        },
         {
           "tcb": {
             "sgxtcbcomponents": [
@@ -549,7 +847,11 @@
             "pcesvn": 13
           },
           "tcbDate": "2025-05-14T00:00:00Z",
-          "tcbStatus": "UpToDate"
+          "tcbStatus": "OutOfDate",
+          "advisoryIDs": [
+            "INTEL-SA-01313",
+            "INTEL-SA-01367"
+          ]
         },
         {
           "tcb": {
@@ -617,22 +919,26 @@
             "pcesvn": 5
           },
           "tcbDate": "2018-01-04T00:00:00Z",
-          "tcbStatus": "OutOfDate"
+          "tcbStatus": "OutOfDate",
+          "advisoryIDs": [
+            "INTEL-SA-01313",
+            "INTEL-SA-01367"
+          ]
         }
       ]
     },
-    "signature": "ad9b4d06c62d92fbefd5efd6090ecd91b353df7a0ec605b56f4b8015650bc4866f59f24a4352631a3336a9e38bc2d326bacbc233292700e26de30418211c9401"
+    "signature": "1b2a466f3c4f57ced919a8183e43e7945bb6b1956952ada76862d14bef1b6e42ed45d1b60336f1af2c6845bf81ebd29967d03cebcb56ad6a6739ae289cff49a0"
   },
   {
     "tcbInfo": {
       "id": "TDX",
       "version": 3,
-      "issueDate": "2025-08-13T01:01:35Z",
-      "nextUpdate": "2025-09-12T01:01:35Z",
+      "issueDate": "2025-08-14T01:01:55Z",
+      "nextUpdate": "2025-09-13T01:01:55Z",
       "fmspc": "70A06D070000",
       "pceId": "0000",
       "tcbType": 0,
-      "tcbEvaluationDataNumber": 19,
+      "tcbEvaluationDataNumber": 20,
       "tdxModule": {
         "mrsigner": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
         "attributes": "0000000000000000",
@@ -647,10 +953,17 @@
           "tcbLevels": [
             {
               "tcb": {
+                "isvsvn": 5
+              },
+              "tcbDate": "2025-08-13T00:00:00Z",
+              "tcbStatus": "UpToDate"
+            },
+            {
+              "tcb": {
                 "isvsvn": 3
               },
               "tcbDate": "2025-05-14T00:00:00Z",
-              "tcbStatus": "UpToDate"
+              "tcbStatus": "OutOfDate"
             }
           ]
         },
@@ -662,10 +975,17 @@
           "tcbLevels": [
             {
               "tcb": {
+                "isvsvn": 11
+              },
+              "tcbDate": "2025-08-13T00:00:00Z",
+              "tcbStatus": "UpToDate"
+            },
+            {
+              "tcb": {
                 "isvsvn": 6
               },
               "tcbDate": "2025-05-14T00:00:00Z",
-              "tcbStatus": "UpToDate"
+              "tcbStatus": "OutOfDate"
             },
             {
               "tcb": {
@@ -693,6 +1013,130 @@
         }
       ],
       "tcbLevels": [
+        {
+          "tcb": {
+            "sgxtcbcomponents": [
+              {
+                "svn": 4,
+                "category": "BIOS",
+                "type": "Early Microcode Update"
+              },
+              {
+                "svn": 4,
+                "category": "OS/VMM",
+                "type": "SGX Late Microcode Update"
+              },
+              {
+                "svn": 2,
+                "category": "OS/VMM",
+                "type": "TXT SINIT"
+              },
+              {
+                "svn": 2,
+                "category": "BIOS"
+              },
+              {
+                "svn": 4,
+                "category": "BIOS"
+              },
+              {
+                "svn": 1,
+                "category": "BIOS"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 2,
+                "category": "OS/VMM",
+                "type": "SEAMLDR ACM"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              }
+            ],
+            "pcesvn": 13,
+            "tdxtcbcomponents": [
+              {
+                "svn": 5,
+                "category": "OS/VMM",
+                "type": "TDX Module"
+              },
+              {
+                "svn": 0,
+                "category": "OS/VMM",
+                "type": "TDX Module"
+              },
+              {
+                "svn": 4,
+                "category": "OS/VMM",
+                "type": "TDX Late Microcode Update"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              }
+            ]
+          },
+          "tcbDate": "2025-08-13T00:00:00Z",
+          "tcbStatus": "UpToDate"
+        },
         {
           "tcb": {
             "sgxtcbcomponents": [
@@ -815,7 +1259,15 @@
             ]
           },
           "tcbDate": "2025-05-14T00:00:00Z",
-          "tcbStatus": "UpToDate"
+          "tcbStatus": "OutOfDate",
+          "advisoryIDs": [
+            "INTEL-SA-01192",
+            "INTEL-SA-01245",
+            "INTEL-SA-01311",
+            "INTEL-SA-01312",
+            "INTEL-SA-01313",
+            "INTEL-SA-01367"
+          ]
         },
         {
           "tcb": {
@@ -939,22 +1391,30 @@
             ]
           },
           "tcbDate": "2018-01-04T00:00:00Z",
-          "tcbStatus": "OutOfDate"
+          "tcbStatus": "OutOfDate",
+          "advisoryIDs": [
+            "INTEL-SA-01192",
+            "INTEL-SA-01245",
+            "INTEL-SA-01311",
+            "INTEL-SA-01312",
+            "INTEL-SA-01313",
+            "INTEL-SA-01367"
+          ]
         }
       ]
     },
-    "signature": "2c24554ab207b2cbcbed9a9a994116e13954b04b1972c94f426667e1987bf67c6d2b0d721778beb00c66c71ede1022508fe58b5f8709ca77c2671a31ff34998c"
+    "signature": "ae01320d7c196494d1d689e6bba23073b008bd61d6dc00481162d2db8498798e8c3de01e9fee6d1ee0eeded61ece62807e4d8143296eb4a23693afcd6eddc508"
   },
   {
     "tcbInfo": {
       "id": "SGX",
       "version": 3,
-      "issueDate": "2025-08-13T01:01:45Z",
-      "nextUpdate": "2025-09-12T01:01:45Z",
+      "issueDate": "2025-08-14T01:02:06Z",
+      "nextUpdate": "2025-09-13T01:02:06Z",
       "fmspc": "00A06E050000",
       "pceId": "0000",
       "tcbType": 0,
-      "tcbEvaluationDataNumber": 19,
+      "tcbEvaluationDataNumber": 20,
       "tcbLevels": [
         {
           "tcb": {
@@ -1021,7 +1481,7 @@
             ],
             "pcesvn": 13
           },
-          "tcbDate": "2025-05-14T00:00:00Z",
+          "tcbDate": "2025-08-13T00:00:00Z",
           "tcbStatus": "UpToDate"
         },
         {
@@ -1094,18 +1554,18 @@
         }
       ]
     },
-    "signature": "6eccb65077cd91d686031dcfba75908046cd30a8adba6c21f0da50bf3c2ebc8259ce9c0dfdb138d8ad67a4bc731de992a829050758a493777d2e8abed924e20a"
+    "signature": "eecf9ea218274c38759838f9fce4ef2c2c166414b4edb835fdd799c71269949d7e815c4c4c9bf903bc1c929bdeb84c15bd8289f59cee9024138cafea369233d3"
   },
   {
     "tcbInfo": {
       "id": "TDX",
       "version": 3,
-      "issueDate": "2025-08-13T01:01:44Z",
-      "nextUpdate": "2025-09-12T01:01:44Z",
+      "issueDate": "2025-08-14T01:02:05Z",
+      "nextUpdate": "2025-09-13T01:02:05Z",
       "fmspc": "00A06E050000",
       "pceId": "0000",
       "tcbType": 0,
-      "tcbEvaluationDataNumber": 19,
+      "tcbEvaluationDataNumber": 20,
       "tdxModule": {
         "mrsigner": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
         "attributes": "0000000000000000",
@@ -1120,10 +1580,17 @@
           "tcbLevels": [
             {
               "tcb": {
+                "isvsvn": 5
+              },
+              "tcbDate": "2025-08-13T00:00:00Z",
+              "tcbStatus": "UpToDate"
+            },
+            {
+              "tcb": {
                 "isvsvn": 3
               },
               "tcbDate": "2025-05-14T00:00:00Z",
-              "tcbStatus": "UpToDate"
+              "tcbStatus": "OutOfDate"
             }
           ]
         },
@@ -1135,10 +1602,17 @@
           "tcbLevels": [
             {
               "tcb": {
+                "isvsvn": 11
+              },
+              "tcbDate": "2025-08-13T00:00:00Z",
+              "tcbStatus": "UpToDate"
+            },
+            {
+              "tcb": {
                 "isvsvn": 6
               },
               "tcbDate": "2025-05-14T00:00:00Z",
-              "tcbStatus": "UpToDate"
+              "tcbStatus": "OutOfDate"
             },
             {
               "tcb": {
@@ -1287,7 +1761,7 @@
               }
             ]
           },
-          "tcbDate": "2025-05-14T00:00:00Z",
+          "tcbDate": "2025-08-13T00:00:00Z",
           "tcbStatus": "UpToDate"
         },
         {
@@ -1416,18 +1890,18 @@
         }
       ]
     },
-    "signature": "278cc7f709fa2efc95bf9d24f098242b8abae5683519be7f5e76a2d9845ca172d077db414c1e16570df9ae64a2a151a2a7e59f17ee6ca3676710383ba11cb45d"
+    "signature": "fd493ab5db54b19359ec48817409b1921daf81ce57e3999ea3cfa0402a5731d7625e2bbd6d1e463a38a1344b6d33cb9f32e9fd2a72ada7ae3aa1db4de370e9af"
   },
   {
     "tcbInfo": {
       "id": "SGX",
       "version": 3,
-      "issueDate": "2025-08-13T01:01:24Z",
-      "nextUpdate": "2025-09-12T01:01:24Z",
+      "issueDate": "2025-08-14T01:01:43Z",
+      "nextUpdate": "2025-09-13T01:01:43Z",
       "fmspc": "00906EA50000",
       "pceId": "0000",
       "tcbType": 0,
-      "tcbEvaluationDataNumber": 19,
+      "tcbEvaluationDataNumber": 20,
       "tcbLevels": [
         {
           "tcb": {
@@ -1483,7 +1957,7 @@
             ],
             "pcesvn": 13
           },
-          "tcbDate": "2025-05-14T00:00:00Z",
+          "tcbDate": "2025-08-13T00:00:00Z",
           "tcbStatus": "SWHardeningNeeded",
           "advisoryIDs": [
             "INTEL-SA-00334",
@@ -1544,7 +2018,7 @@
             ],
             "pcesvn": 13
           },
-          "tcbDate": "2025-05-14T00:00:00Z",
+          "tcbDate": "2025-08-13T00:00:00Z",
           "tcbStatus": "ConfigurationAndSWHardeningNeeded",
           "advisoryIDs": [
             "INTEL-SA-00161",
@@ -2999,18 +3473,18 @@
         }
       ]
     },
-    "signature": "31021e19bf74f1c9c5001906a41aa8c659682b50f183c310b0bb3688829452e11a55f1c54000980a450adfa0f6ce5038cb328d01de0df526a767784900c2e1e0"
+    "signature": "b0a55fc8384abab45cbc9bf2e490aa4698ca5c46586978d13d9718ae59590440c936b7484a130544547a788be0864e6f4c45a4dc25142356ca464ae2f8864cbe"
   },
   {
     "tcbInfo": {
       "id": "SGX",
       "version": 3,
-      "issueDate": "2025-08-13T01:01:34Z",
-      "nextUpdate": "2025-09-12T01:01:34Z",
+      "issueDate": "2025-08-14T01:01:53Z",
+      "nextUpdate": "2025-09-13T01:01:53Z",
       "fmspc": "20606C040000",
       "pceId": "0000",
       "tcbType": 0,
-      "tcbEvaluationDataNumber": 19,
+      "tcbEvaluationDataNumber": 20,
       "tcbLevels": [
         {
           "tcb": {
@@ -3073,7 +3547,7 @@
             ],
             "pcesvn": 13
           },
-          "tcbDate": "2025-05-14T00:00:00Z",
+          "tcbDate": "2025-08-13T00:00:00Z",
           "tcbStatus": "SWHardeningNeeded",
           "advisoryIDs": [
             "INTEL-SA-00615"
@@ -3140,7 +3614,7 @@
             ],
             "pcesvn": 13
           },
-          "tcbDate": "2025-05-14T00:00:00Z",
+          "tcbDate": "2025-08-13T00:00:00Z",
           "tcbStatus": "ConfigurationAndSWHardeningNeeded",
           "advisoryIDs": [
             "INTEL-SA-00657",
@@ -4059,19 +4533,87 @@
         }
       ]
     },
-    "signature": "665e6bd98924ec500774a7a1bd706ed6e4a19f0899a1484a725040754e1c194007ead8e5804cbb4b42f56b7712bdf00534a90dd1f34a2bebeb462fb20e7604b1"
+    "signature": "608034717f6120b838f183905153eb4dcd757a7d77991e8161b2431196c7c892517b6734a075245f97577ef8f921195940e4dec37c4295c401c351f6245737bf"
   },
   {
     "tcbInfo": {
       "id": "SGX",
       "version": 3,
-      "issueDate": "2025-08-13T00:47:16Z",
-      "nextUpdate": "2025-09-12T00:47:16Z",
+      "issueDate": "2025-08-14T00:32:32Z",
+      "nextUpdate": "2025-09-13T00:32:32Z",
       "fmspc": "50806F000000",
       "pceId": "0000",
       "tcbType": 0,
-      "tcbEvaluationDataNumber": 19,
+      "tcbEvaluationDataNumber": 20,
       "tcbLevels": [
+        {
+          "tcb": {
+            "sgxtcbcomponents": [
+              {
+                "svn": 9,
+                "category": "BIOS",
+                "type": "Early Microcode Update"
+              },
+              {
+                "svn": 9,
+                "category": "OS/VMM",
+                "type": "SGX Late Microcode Update"
+              },
+              {
+                "svn": 2,
+                "category": "OS/VMM",
+                "type": "TXT SINIT"
+              },
+              {
+                "svn": 2,
+                "category": "BIOS"
+              },
+              {
+                "svn": 4,
+                "category": "BIOS"
+              },
+              {
+                "svn": 1,
+                "category": "BIOS"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 3,
+                "category": "OS/VMM",
+                "type": "SEAMLDR ACM"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              }
+            ],
+            "pcesvn": 11
+          },
+          "tcbDate": "2025-08-13T00:00:00Z",
+          "tcbStatus": "UpToDate"
+        },
         {
           "tcb": {
             "sgxtcbcomponents": [
@@ -4138,7 +4680,10 @@
             "pcesvn": 11
           },
           "tcbDate": "2025-05-14T00:00:00Z",
-          "tcbStatus": "UpToDate"
+          "tcbStatus": "OutOfDate",
+          "advisoryIDs": [
+            "INTEL-SA-01313"
+          ]
         },
         {
           "tcb": {
@@ -4210,7 +4755,8 @@
           "advisoryIDs": [
             "INTEL-SA-01079",
             "INTEL-SA-01103",
-            "INTEL-SA-01111"
+            "INTEL-SA-01111",
+            "INTEL-SA-01313"
           ]
         },
         {
@@ -4286,7 +4832,8 @@
             "INTEL-SA-00986",
             "INTEL-SA-01079",
             "INTEL-SA-01103",
-            "INTEL-SA-01111"
+            "INTEL-SA-01111",
+            "INTEL-SA-01313"
           ]
         },
         {
@@ -4363,7 +4910,8 @@
             "INTEL-SA-00986",
             "INTEL-SA-01079",
             "INTEL-SA-01103",
-            "INTEL-SA-01111"
+            "INTEL-SA-01111",
+            "INTEL-SA-01313"
           ]
         },
         {
@@ -4453,23 +5001,24 @@
             "INTEL-SA-00986",
             "INTEL-SA-01079",
             "INTEL-SA-01103",
-            "INTEL-SA-01111"
+            "INTEL-SA-01111",
+            "INTEL-SA-01313"
           ]
         }
       ]
     },
-    "signature": "11759728f3238a97df1ea6790eaa508de814e35d8d90164bda19a735e4c2407aaa090fe643a022a6ebc0c791e79ffe2bde2625d7d7a9f0e3ec6ec4a10d44c9b8"
+    "signature": "133244db79f3bcba61aa1991fa872c52c853bd06327682030416c1e41eb91a651a6e0df85921e145d71ac15df51455164946b2571dd8c5149a34bb52cf0c17a8"
   },
   {
     "tcbInfo": {
       "id": "TDX",
       "version": 3,
-      "issueDate": "2025-08-13T00:31:34Z",
-      "nextUpdate": "2025-09-12T00:31:34Z",
+      "issueDate": "2025-08-14T01:32:11Z",
+      "nextUpdate": "2025-09-13T01:32:11Z",
       "fmspc": "50806F000000",
       "pceId": "0000",
       "tcbType": 0,
-      "tcbEvaluationDataNumber": 19,
+      "tcbEvaluationDataNumber": 20,
       "tdxModule": {
         "mrsigner": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
         "attributes": "0000000000000000",
@@ -4484,10 +5033,17 @@
           "tcbLevels": [
             {
               "tcb": {
+                "isvsvn": 5
+              },
+              "tcbDate": "2025-08-13T00:00:00Z",
+              "tcbStatus": "UpToDate"
+            },
+            {
+              "tcb": {
                 "isvsvn": 3
               },
               "tcbDate": "2025-05-14T00:00:00Z",
-              "tcbStatus": "UpToDate"
+              "tcbStatus": "OutOfDate"
             }
           ]
         },
@@ -4499,10 +5055,17 @@
           "tcbLevels": [
             {
               "tcb": {
+                "isvsvn": 11
+              },
+              "tcbDate": "2025-08-13T00:00:00Z",
+              "tcbStatus": "UpToDate"
+            },
+            {
+              "tcb": {
                 "isvsvn": 6
               },
               "tcbDate": "2025-05-14T00:00:00Z",
-              "tcbStatus": "UpToDate"
+              "tcbStatus": "OutOfDate"
             },
             {
               "tcb": {
@@ -4530,6 +5093,130 @@
         }
       ],
       "tcbLevels": [
+        {
+          "tcb": {
+            "sgxtcbcomponents": [
+              {
+                "svn": 9,
+                "category": "BIOS",
+                "type": "Early Microcode Update"
+              },
+              {
+                "svn": 9,
+                "category": "OS/VMM",
+                "type": "SGX Late Microcode Update"
+              },
+              {
+                "svn": 2,
+                "category": "OS/VMM",
+                "type": "TXT SINIT"
+              },
+              {
+                "svn": 2,
+                "category": "BIOS"
+              },
+              {
+                "svn": 4,
+                "category": "BIOS"
+              },
+              {
+                "svn": 1,
+                "category": "BIOS"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 6,
+                "category": "OS/VMM",
+                "type": "SEAMLDR ACM"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              }
+            ],
+            "pcesvn": 11,
+            "tdxtcbcomponents": [
+              {
+                "svn": 5,
+                "category": "OS/VMM",
+                "type": "TDX Module"
+              },
+              {
+                "svn": 0,
+                "category": "OS/VMM",
+                "type": "TDX Module"
+              },
+              {
+                "svn": 9,
+                "category": "OS/VMM",
+                "type": "TDX Late Microcode Update"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              }
+            ]
+          },
+          "tcbDate": "2025-08-13T00:00:00Z",
+          "tcbStatus": "UpToDate"
+        },
         {
           "tcb": {
             "sgxtcbcomponents": [
@@ -4652,7 +5339,13 @@
             ]
           },
           "tcbDate": "2025-05-14T00:00:00Z",
-          "tcbStatus": "UpToDate"
+          "tcbStatus": "OutOfDate",
+          "advisoryIDs": [
+            "INTEL-SA-01192",
+            "INTEL-SA-01245",
+            "INTEL-SA-01312",
+            "INTEL-SA-01313"
+          ]
         },
         {
           "tcb": {
@@ -4784,7 +5477,11 @@
             "INTEL-SA-01079",
             "INTEL-SA-01099",
             "INTEL-SA-01103",
-            "INTEL-SA-01111"
+            "INTEL-SA-01111",
+            "INTEL-SA-01192",
+            "INTEL-SA-01245",
+            "INTEL-SA-01312",
+            "INTEL-SA-01313"
           ]
         },
         {
@@ -4920,7 +5617,11 @@
             "INTEL-SA-01079",
             "INTEL-SA-01099",
             "INTEL-SA-01103",
-            "INTEL-SA-01111"
+            "INTEL-SA-01111",
+            "INTEL-SA-01192",
+            "INTEL-SA-01245",
+            "INTEL-SA-01312",
+            "INTEL-SA-01313"
           ]
         },
         {
@@ -5057,7 +5758,11 @@
             "INTEL-SA-01079",
             "INTEL-SA-01099",
             "INTEL-SA-01103",
-            "INTEL-SA-01111"
+            "INTEL-SA-01111",
+            "INTEL-SA-01192",
+            "INTEL-SA-01245",
+            "INTEL-SA-01312",
+            "INTEL-SA-01313"
           ]
         },
         {
@@ -5207,23 +5912,27 @@
             "INTEL-SA-01079",
             "INTEL-SA-01099",
             "INTEL-SA-01103",
-            "INTEL-SA-01111"
+            "INTEL-SA-01111",
+            "INTEL-SA-01192",
+            "INTEL-SA-01245",
+            "INTEL-SA-01312",
+            "INTEL-SA-01313"
           ]
         }
       ]
     },
-    "signature": "d5f9494a75c5c88cf5cb862e23cfe2092900b848f35b5d572699747d599c7ae4fe2bafbe5557a3734f97e22ca8e570b0671a211e608cb5b19ecc4a7c856f29e9"
+    "signature": "66aa6af325a82128d420967cd2a75616d0f227d95c9974c3cc19373800c436febc6c8e5a11de3c835d4d77b10e593ea744d03bbc760bfa553652a7118b17379f"
   },
   {
     "tcbInfo": {
       "id": "SGX",
       "version": 3,
-      "issueDate": "2025-08-13T01:01:30Z",
-      "nextUpdate": "2025-09-12T01:01:30Z",
+      "issueDate": "2025-08-14T01:01:50Z",
+      "nextUpdate": "2025-09-13T01:01:50Z",
       "fmspc": "00A067110000",
       "pceId": "0000",
       "tcbType": 0,
-      "tcbEvaluationDataNumber": 19,
+      "tcbEvaluationDataNumber": 20,
       "tcbLevels": [
         {
           "tcb": {
@@ -5279,7 +5988,7 @@
             ],
             "pcesvn": 13
           },
-          "tcbDate": "2025-05-14T00:00:00Z",
+          "tcbDate": "2025-08-13T00:00:00Z",
           "tcbStatus": "SWHardeningNeeded",
           "advisoryIDs": [
             "INTEL-SA-00615"
@@ -5339,7 +6048,7 @@
             ],
             "pcesvn": 13
           },
-          "tcbDate": "2025-05-14T00:00:00Z",
+          "tcbDate": "2025-08-13T00:00:00Z",
           "tcbStatus": "ConfigurationAndSWHardeningNeeded",
           "advisoryIDs": [
             "INTEL-SA-00289",
@@ -6077,18 +6786,18 @@
         }
       ]
     },
-    "signature": "c506cf614de20dddf3323856665e0954100df2056f4bf240e342aba72c3a30bea2dc9b1a8852ccea3df8c6130c74fe3168f9706de99bf10ec4299951dc39d7b9"
+    "signature": "95c5fdebed83a295b77195e20adc5788c61c7e0231ff6219669c744f49e7307f31aa4baa870bcbc7c07e0498bfdaebbf0a01720ec90685fd079c37dfcf16c9c5"
   },
   {
     "tcbInfo": {
       "id": "SGX",
       "version": 3,
-      "issueDate": "2025-08-13T00:47:19Z",
-      "nextUpdate": "2025-09-12T00:47:19Z",
+      "issueDate": "2025-08-14T00:32:35Z",
+      "nextUpdate": "2025-09-13T00:32:35Z",
       "fmspc": "00606C040000",
       "pceId": "0000",
       "tcbType": 0,
-      "tcbEvaluationDataNumber": 19,
+      "tcbEvaluationDataNumber": 20,
       "tcbLevels": [
         {
           "tcb": {
@@ -6151,7 +6860,7 @@
             ],
             "pcesvn": 13
           },
-          "tcbDate": "2025-05-14T00:00:00Z",
+          "tcbDate": "2025-08-13T00:00:00Z",
           "tcbStatus": "SWHardeningNeeded",
           "advisoryIDs": [
             "INTEL-SA-00615"
@@ -6218,7 +6927,7 @@
             ],
             "pcesvn": 13
           },
-          "tcbDate": "2025-05-14T00:00:00Z",
+          "tcbDate": "2025-08-13T00:00:00Z",
           "tcbStatus": "ConfigurationAndSWHardeningNeeded",
           "advisoryIDs": [
             "INTEL-SA-00657",
@@ -7217,18 +7926,18 @@
         }
       ]
     },
-    "signature": "292bd4777ef24f43d9e9beedaa5a275458138af5d73ca16115700f65137b89c40c81d90861489280be4aec67feb044fe2d634f08fad5be982389e6010616c42b"
+    "signature": "ada01c4674bcd7b0ec62223e9f749b34076d8693891c61a8afb19b87f2860f5c54a8aa5ac8b557ba5af5a5d4bffe947e6915a721c8bf96df907600ff4c8f3233"
   },
   {
     "tcbInfo": {
       "id": "SGX",
       "version": 3,
-      "issueDate": "2025-08-13T01:31:26Z",
-      "nextUpdate": "2025-09-12T01:31:26Z",
+      "issueDate": "2025-08-14T01:01:41Z",
+      "nextUpdate": "2025-09-13T01:01:41Z",
       "fmspc": "00706E470000",
       "pceId": "0000",
       "tcbType": 0,
-      "tcbEvaluationDataNumber": 19,
+      "tcbEvaluationDataNumber": 20,
       "tcbLevels": [
         {
           "tcb": {
@@ -7284,7 +7993,7 @@
             ],
             "pcesvn": 13
           },
-          "tcbDate": "2025-05-14T00:00:00Z",
+          "tcbDate": "2025-08-13T00:00:00Z",
           "tcbStatus": "SWHardeningNeeded",
           "advisoryIDs": [
             "INTEL-SA-00615"
@@ -7344,7 +8053,7 @@
             ],
             "pcesvn": 13
           },
-          "tcbDate": "2025-05-14T00:00:00Z",
+          "tcbDate": "2025-08-13T00:00:00Z",
           "tcbStatus": "ConfigurationAndSWHardeningNeeded",
           "advisoryIDs": [
             "INTEL-SA-00289",
@@ -8222,18 +8931,18 @@
         }
       ]
     },
-    "signature": "0e4dabc4dc64765fa500c981fa23650ea1f62a48484f94c5ad23310162f5b1fcd9db2c7c2929886b0c5c912a911d9d9750a310ea8d0c0541ecbb5c80e00e541d"
+    "signature": "573cec40348aa8f8c267c0d4efd3135dff24b3b3dfb42bef1c32a159875598102c505f03ba9876c3d7b5e2f050472971be5a76b730077c4a831c6f11756525d4"
   },
   {
     "tcbInfo": {
       "id": "SGX",
       "version": 3,
-      "issueDate": "2025-08-13T01:01:25Z",
-      "nextUpdate": "2025-09-12T01:01:25Z",
+      "issueDate": "2025-08-14T01:01:44Z",
+      "nextUpdate": "2025-09-13T01:01:44Z",
       "fmspc": "00806EA60000",
       "pceId": "0000",
       "tcbType": 0,
-      "tcbEvaluationDataNumber": 19,
+      "tcbEvaluationDataNumber": 20,
       "tcbLevels": [
         {
           "tcb": {
@@ -8289,7 +8998,7 @@
             ],
             "pcesvn": 13
           },
-          "tcbDate": "2025-05-14T00:00:00Z",
+          "tcbDate": "2025-08-13T00:00:00Z",
           "tcbStatus": "SWHardeningNeeded",
           "advisoryIDs": [
             "INTEL-SA-00334",
@@ -8350,7 +9059,7 @@
             ],
             "pcesvn": 13
           },
-          "tcbDate": "2025-05-14T00:00:00Z",
+          "tcbDate": "2025-08-13T00:00:00Z",
           "tcbStatus": "ConfigurationAndSWHardeningNeeded",
           "advisoryIDs": [
             "INTEL-SA-00161",
@@ -9805,18 +10514,18 @@
         }
       ]
     },
-    "signature": "47df27962f12ba5d99aefb52783a75cd64678de1e4ba4c464661eba8d3ca2059d5b6e4e4293e7cfff119263b8e9a95455cb6f185ac9a6da7e2fb57e9142563d1"
+    "signature": "78af4ec1102bc7c08155d2ca784daa6a7c347e4fa1418ebcb0c03d69709dd69795c971a608aeb11390d9aead800c7a0b3d869c57625572610b069b4731c86fb1"
   },
   {
     "tcbInfo": {
       "id": "SGX",
       "version": 3,
-      "issueDate": "2025-08-13T01:17:24Z",
-      "nextUpdate": "2025-09-12T01:17:24Z",
+      "issueDate": "2025-08-14T00:32:38Z",
+      "nextUpdate": "2025-09-13T00:32:38Z",
       "fmspc": "00706A800000",
       "pceId": "0000",
       "tcbType": 0,
-      "tcbEvaluationDataNumber": 19,
+      "tcbEvaluationDataNumber": 20,
       "tcbLevels": [
         {
           "tcb": {
@@ -9872,7 +10581,7 @@
             ],
             "pcesvn": 13
           },
-          "tcbDate": "2025-05-14T00:00:00Z",
+          "tcbDate": "2025-08-13T00:00:00Z",
           "tcbStatus": "UpToDate"
         },
         {
@@ -10403,18 +11112,18 @@
         }
       ]
     },
-    "signature": "ef7c4088f1e3647f369c15e25ae32423629fc4a254d7c002345d79239528dcaabc32bdda8969a83b31eb766d180fd533cf5f2509584f2dd4be46251a9e2f5d60"
+    "signature": "8a921dbfef295503ff30d19fb45632707bbb63a2a7ee54eddc9f73db5923cf416574173631cde6b219d133ff3663e200fe38a9c1200298557c6c4e1993fc983e"
   },
   {
     "tcbInfo": {
       "id": "SGX",
       "version": 3,
-      "issueDate": "2025-08-13T01:16:25Z",
-      "nextUpdate": "2025-09-12T01:16:25Z",
+      "issueDate": "2025-08-14T01:01:42Z",
+      "nextUpdate": "2025-09-13T01:01:42Z",
       "fmspc": "00706A100000",
       "pceId": "0000",
       "tcbType": 0,
-      "tcbEvaluationDataNumber": 19,
+      "tcbEvaluationDataNumber": 20,
       "tcbLevels": [
         {
           "tcb": {
@@ -10470,7 +11179,7 @@
             ],
             "pcesvn": 65535
           },
-          "tcbDate": "2025-05-14T00:00:00Z",
+          "tcbDate": "2025-08-13T00:00:00Z",
           "tcbStatus": "UpToDate"
         },
         {
@@ -11233,19 +11942,87 @@
         }
       ]
     },
-    "signature": "a9c96f7d0bb62eadbe13f6a91abdb3056e959e3481cd0378f8f6e4418ebe2e56b75bca2528dcfcc4e9966672a71f9ff83e49d2f38cca602f97900f9b740f31f4"
+    "signature": "b595135007d93b381d851c847c7da677a2cc139395de55408ab2c76b59c8697ca3897bdb491b6f6d05ebed98edd9b5ce2c47a4a882018acc2378305cc90ab1ae"
   },
   {
     "tcbInfo": {
       "id": "SGX",
       "version": 3,
-      "issueDate": "2025-08-13T01:01:41Z",
-      "nextUpdate": "2025-09-12T01:01:41Z",
+      "issueDate": "2025-08-14T01:02:00Z",
+      "nextUpdate": "2025-09-13T01:02:00Z",
       "fmspc": "F0806F000000",
       "pceId": "0000",
       "tcbType": 0,
-      "tcbEvaluationDataNumber": 19,
+      "tcbEvaluationDataNumber": 20,
       "tcbLevels": [
+        {
+          "tcb": {
+            "sgxtcbcomponents": [
+              {
+                "svn": 9,
+                "category": "BIOS",
+                "type": "Early Microcode Update"
+              },
+              {
+                "svn": 9,
+                "category": "OS/VMM",
+                "type": "SGX Late Microcode Update"
+              },
+              {
+                "svn": 2,
+                "category": "OS/VMM",
+                "type": "TXT SINIT"
+              },
+              {
+                "svn": 2,
+                "category": "BIOS"
+              },
+              {
+                "svn": 4,
+                "category": "BIOS"
+              },
+              {
+                "svn": 1,
+                "category": "BIOS"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 255,
+                "category": "OS/VMM",
+                "type": "SEAMLDR ACM"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              }
+            ],
+            "pcesvn": 13
+          },
+          "tcbDate": "2025-08-13T00:00:00Z",
+          "tcbStatus": "UpToDate"
+        },
         {
           "tcb": {
             "sgxtcbcomponents": [
@@ -11312,7 +12089,10 @@
             "pcesvn": 13
           },
           "tcbDate": "2025-05-14T00:00:00Z",
-          "tcbStatus": "UpToDate"
+          "tcbStatus": "OutOfDate",
+          "advisoryIDs": [
+            "INTEL-SA-01313"
+          ]
         },
         {
           "tcb": {
@@ -11384,7 +12164,8 @@
           "advisoryIDs": [
             "INTEL-SA-01079",
             "INTEL-SA-01103",
-            "INTEL-SA-01111"
+            "INTEL-SA-01111",
+            "INTEL-SA-01313"
           ]
         },
         {
@@ -11460,7 +12241,8 @@
             "INTEL-SA-00986",
             "INTEL-SA-01079",
             "INTEL-SA-01103",
-            "INTEL-SA-01111"
+            "INTEL-SA-01111",
+            "INTEL-SA-01313"
           ]
         },
         {
@@ -11537,7 +12319,8 @@
             "INTEL-SA-00986",
             "INTEL-SA-01079",
             "INTEL-SA-01103",
-            "INTEL-SA-01111"
+            "INTEL-SA-01111",
+            "INTEL-SA-01313"
           ]
         },
         {
@@ -11614,23 +12397,24 @@
             "INTEL-SA-00986",
             "INTEL-SA-01079",
             "INTEL-SA-01103",
-            "INTEL-SA-01111"
+            "INTEL-SA-01111",
+            "INTEL-SA-01313"
           ]
         }
       ]
     },
-    "signature": "718c3b51f0f0864cbf23ed143f4016933ad41f8b2e00843e95c237494a77b20afff9e01fbebc05535711368810923cdb2793cfe72c47f840d98b71b677a5bf24"
+    "signature": "ae6f7b0d0d5a2c03670b213db0b40c02e1411639d40dfddbbc4cf4740b0dd6f9079d4296e77bb203e7144a4e6a802ff5dc1f25b95509a286cc37a926062b8db8"
   },
   {
     "tcbInfo": {
       "id": "SGX",
       "version": 3,
-      "issueDate": "2025-08-13T01:01:26Z",
-      "nextUpdate": "2025-09-12T01:01:26Z",
+      "issueDate": "2025-08-14T01:01:45Z",
+      "nextUpdate": "2025-09-13T01:01:45Z",
       "fmspc": "00806EB70000",
       "pceId": "0000",
       "tcbType": 0,
-      "tcbEvaluationDataNumber": 19,
+      "tcbEvaluationDataNumber": 20,
       "tcbLevels": [
         {
           "tcb": {
@@ -11686,7 +12470,7 @@
             ],
             "pcesvn": 5
           },
-          "tcbDate": "2025-05-14T00:00:00Z",
+          "tcbDate": "2025-08-13T00:00:00Z",
           "tcbStatus": "Revoked",
           "advisoryIDs": [
             "INTEL-SA-00334"
@@ -11755,18 +12539,18 @@
         }
       ]
     },
-    "signature": "cbf6d75f7d780eccea04fb25be59a62eaab119a58ceaeb62c6a6787ed74f5f12d6a8f6365c0bc2235343ebc6dbacb5be99e0b65ee17c7c40efbc455451b52042"
+    "signature": "1275c903cbaf7ea71badcc85d3152ca4689508934634c8b43239d0616ca96d52a6ac6a1b1f82cd696722218522bc7a4213763885786edad585de920c4c9376fe"
   },
   {
     "tcbInfo": {
       "id": "SGX",
       "version": 3,
-      "issueDate": "2025-08-13T01:01:26Z",
-      "nextUpdate": "2025-09-12T01:01:26Z",
+      "issueDate": "2025-08-14T01:01:45Z",
+      "nextUpdate": "2025-09-13T01:01:45Z",
       "fmspc": "00906EC50000",
       "pceId": "0000",
       "tcbType": 0,
-      "tcbEvaluationDataNumber": 19,
+      "tcbEvaluationDataNumber": 20,
       "tcbLevels": [
         {
           "tcb": {
@@ -11822,7 +12606,7 @@
             ],
             "pcesvn": 13
           },
-          "tcbDate": "2025-05-14T00:00:00Z",
+          "tcbDate": "2025-08-13T00:00:00Z",
           "tcbStatus": "SWHardeningNeeded",
           "advisoryIDs": [
             "INTEL-SA-00334",
@@ -11883,7 +12667,7 @@
             ],
             "pcesvn": 13
           },
-          "tcbDate": "2025-05-14T00:00:00Z",
+          "tcbDate": "2025-08-13T00:00:00Z",
           "tcbStatus": "ConfigurationAndSWHardeningNeeded",
           "advisoryIDs": [
             "INTEL-SA-00161",
@@ -13257,19 +14041,87 @@
         }
       ]
     },
-    "signature": "6322569d38eb180a700487c24e28e5657a837ff3163d2c0cead6a1bbae4da7233e1ae988632d9e83fd6452f0599eb40aedc16a2e2c3fa298a500950e418a69a3"
+    "signature": "4842c50221ed7484eeee84d903044a81765153027b130578008cd9dd18f6c33609f3e90b491f690ae5e916fc9275f424d3772736c29354eefc074e700d348818"
   },
   {
     "tcbInfo": {
       "id": "SGX",
       "version": 3,
-      "issueDate": "2025-08-13T00:31:37Z",
-      "nextUpdate": "2025-09-12T00:31:37Z",
+      "issueDate": "2025-08-14T01:01:56Z",
+      "nextUpdate": "2025-09-13T01:01:56Z",
       "fmspc": "90806F000000",
       "pceId": "0000",
       "tcbType": 0,
-      "tcbEvaluationDataNumber": 19,
+      "tcbEvaluationDataNumber": 20,
       "tcbLevels": [
+        {
+          "tcb": {
+            "sgxtcbcomponents": [
+              {
+                "svn": 9,
+                "category": "BIOS",
+                "type": "Early Microcode Update"
+              },
+              {
+                "svn": 9,
+                "category": "OS/VMM",
+                "type": "SGX Late Microcode Update"
+              },
+              {
+                "svn": 2,
+                "category": "OS/VMM",
+                "type": "TXT SINIT"
+              },
+              {
+                "svn": 2,
+                "category": "BIOS"
+              },
+              {
+                "svn": 4,
+                "category": "BIOS"
+              },
+              {
+                "svn": 1,
+                "category": "BIOS"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 255,
+                "category": "OS/VMM",
+                "type": "SEAMLDR ACM"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              }
+            ],
+            "pcesvn": 11
+          },
+          "tcbDate": "2025-08-13T00:00:00Z",
+          "tcbStatus": "UpToDate"
+        },
         {
           "tcb": {
             "sgxtcbcomponents": [
@@ -13336,7 +14188,10 @@
             "pcesvn": 11
           },
           "tcbDate": "2025-05-14T00:00:00Z",
-          "tcbStatus": "UpToDate"
+          "tcbStatus": "OutOfDate",
+          "advisoryIDs": [
+            "INTEL-SA-01313"
+          ]
         },
         {
           "tcb": {
@@ -13408,7 +14263,8 @@
           "advisoryIDs": [
             "INTEL-SA-01079",
             "INTEL-SA-01103",
-            "INTEL-SA-01111"
+            "INTEL-SA-01111",
+            "INTEL-SA-01313"
           ]
         },
         {
@@ -13484,7 +14340,8 @@
             "INTEL-SA-00986",
             "INTEL-SA-01079",
             "INTEL-SA-01103",
-            "INTEL-SA-01111"
+            "INTEL-SA-01111",
+            "INTEL-SA-01313"
           ]
         },
         {
@@ -13561,7 +14418,8 @@
             "INTEL-SA-00986",
             "INTEL-SA-01079",
             "INTEL-SA-01103",
-            "INTEL-SA-01111"
+            "INTEL-SA-01111",
+            "INTEL-SA-01313"
           ]
         },
         {
@@ -13651,23 +14509,24 @@
             "INTEL-SA-00986",
             "INTEL-SA-01079",
             "INTEL-SA-01103",
-            "INTEL-SA-01111"
+            "INTEL-SA-01111",
+            "INTEL-SA-01313"
           ]
         }
       ]
     },
-    "signature": "a8b2d42881efc1a3988377db87e35ee44c2c432739a0c9d87572e9267878db45b1d81f05a61947ae2d0c31605b35d318c6f88e6c746bee09a5fa40308bcb0b0d"
+    "signature": "50b0726a42e496268f081d982c3abf52a50850eac004e2745f902775326149bcd3356879e08abfd96cb482493bcf8de231f91919c4f2b1a232deab740a1fc38f"
   },
   {
     "tcbInfo": {
       "id": "SGX",
       "version": 3,
-      "issueDate": "2025-08-13T01:01:43Z",
-      "nextUpdate": "2025-09-12T01:01:43Z",
+      "issueDate": "2025-08-14T01:02:03Z",
+      "nextUpdate": "2025-09-13T01:02:03Z",
       "fmspc": "10A06F010000",
       "pceId": "0000",
       "tcbType": 0,
-      "tcbEvaluationDataNumber": 19,
+      "tcbEvaluationDataNumber": 20,
       "tcbLevels": [
         {
           "tcb": {
@@ -13734,23 +14593,23 @@
             ],
             "pcesvn": 13
           },
-          "tcbDate": "2025-05-14T00:00:00Z",
+          "tcbDate": "2025-08-13T00:00:00Z",
           "tcbStatus": "UpToDate"
         }
       ]
     },
-    "signature": "0cbb126f00d90ea4268c07a2fd9b58c2f27a4a3481ff098a1f93eff65b8efaedd5b4376618181a6fbe3cf9435a77f9e5a4723cdcb07d56c00508f17c88f02b33"
+    "signature": "4f8abb8861c3d55aba2b42cf5c70dc11b9c6b5cf57ce3c92516f91ffccf98ac8a50fa5dd56d0080ef055f725612dd89a3f0207808b99032fe44f622e7d814ff5"
   },
   {
     "tcbInfo": {
       "id": "TDX",
       "version": 3,
-      "issueDate": "2025-08-13T01:01:43Z",
-      "nextUpdate": "2025-09-12T01:01:43Z",
+      "issueDate": "2025-08-14T01:02:03Z",
+      "nextUpdate": "2025-09-13T01:02:03Z",
       "fmspc": "10A06F010000",
       "pceId": "0000",
       "tcbType": 0,
-      "tcbEvaluationDataNumber": 19,
+      "tcbEvaluationDataNumber": 20,
       "tdxModule": {
         "mrsigner": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
         "attributes": "0000000000000000",
@@ -13765,10 +14624,17 @@
           "tcbLevels": [
             {
               "tcb": {
+                "isvsvn": 5
+              },
+              "tcbDate": "2025-08-13T00:00:00Z",
+              "tcbStatus": "UpToDate"
+            },
+            {
+              "tcb": {
                 "isvsvn": 3
               },
               "tcbDate": "2025-05-14T00:00:00Z",
-              "tcbStatus": "UpToDate"
+              "tcbStatus": "OutOfDate"
             }
           ]
         },
@@ -13780,10 +14646,17 @@
           "tcbLevels": [
             {
               "tcb": {
+                "isvsvn": 11
+              },
+              "tcbDate": "2025-08-13T00:00:00Z",
+              "tcbStatus": "UpToDate"
+            },
+            {
+              "tcb": {
                 "isvsvn": 6
               },
               "tcbDate": "2025-05-14T00:00:00Z",
-              "tcbStatus": "UpToDate"
+              "tcbStatus": "OutOfDate"
             },
             {
               "tcb": {
@@ -13932,23 +14805,23 @@
               }
             ]
           },
-          "tcbDate": "2025-05-14T00:00:00Z",
+          "tcbDate": "2025-08-13T00:00:00Z",
           "tcbStatus": "UpToDate"
         }
       ]
     },
-    "signature": "aec38dd32f4c4156ec84dbffb50f56afd3bd4c5835714dee41f84ccefe83c5ad3d9f18ca7140fdd0ab4e4d110d765143f7a9cf0f5a7e43535c91a673cc2026ed"
+    "signature": "c465fed6f5cbf5432d6af33e372bef44b34262d837a44e8d5059956321e867de0bf595910baadaa26d37f849e0797db0068a16e1999ae6b14fb571f2e1166852"
   },
   {
     "tcbInfo": {
       "id": "SGX",
       "version": 3,
-      "issueDate": "2025-08-13T01:01:27Z",
-      "nextUpdate": "2025-09-12T01:01:27Z",
+      "issueDate": "2025-08-14T01:01:46Z",
+      "nextUpdate": "2025-09-13T01:01:46Z",
       "fmspc": "00906EC10000",
       "pceId": "0000",
       "tcbType": 0,
-      "tcbEvaluationDataNumber": 19,
+      "tcbEvaluationDataNumber": 20,
       "tcbLevels": [
         {
           "tcb": {
@@ -14004,7 +14877,7 @@
             ],
             "pcesvn": 5
           },
-          "tcbDate": "2025-05-14T00:00:00Z",
+          "tcbDate": "2025-08-13T00:00:00Z",
           "tcbStatus": "Revoked",
           "advisoryIDs": [
             "INTEL-SA-00334"
@@ -14073,19 +14946,87 @@
         }
       ]
     },
-    "signature": "19ff4bf0ba451cd6851f6774852ad129b96a42c0fc529fba8ce87562238332d8e3b6b48dcf77bcf184d4064eceb0f7da732af1dd5e35294abf06a1273dc57292"
+    "signature": "8ad97e96863914424d726b5437d4062f689244a79cb763ff734506f5f74d46773810f4f04e012f81a00b4f0c16f0d5a82b02185e6e582a295ec6dfab9dbf3bd2"
   },
   {
     "tcbInfo": {
       "id": "SGX",
       "version": 3,
-      "issueDate": "2025-08-13T00:31:43Z",
-      "nextUpdate": "2025-09-12T00:31:43Z",
+      "issueDate": "2025-08-14T01:02:03Z",
+      "nextUpdate": "2025-09-13T01:02:03Z",
       "fmspc": "B0C06F000000",
       "pceId": "0000",
       "tcbType": 0,
-      "tcbEvaluationDataNumber": 19,
+      "tcbEvaluationDataNumber": 20,
       "tcbLevels": [
+        {
+          "tcb": {
+            "sgxtcbcomponents": [
+              {
+                "svn": 4,
+                "category": "BIOS",
+                "type": "Early Microcode Update"
+              },
+              {
+                "svn": 4,
+                "category": "OS/VMM",
+                "type": "SGX Late Microcode Update"
+              },
+              {
+                "svn": 2,
+                "category": "OS/VMM",
+                "type": "TXT SINIT"
+              },
+              {
+                "svn": 2,
+                "category": "BIOS"
+              },
+              {
+                "svn": 4,
+                "category": "BIOS"
+              },
+              {
+                "svn": 1,
+                "category": "BIOS"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 3,
+                "category": "OS/VMM",
+                "type": "SEAMLDR ACM"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              }
+            ],
+            "pcesvn": 11
+          },
+          "tcbDate": "2025-08-13T00:00:00Z",
+          "tcbStatus": "UpToDate"
+        },
         {
           "tcb": {
             "sgxtcbcomponents": [
@@ -14152,7 +15093,10 @@
             "pcesvn": 11
           },
           "tcbDate": "2025-05-14T00:00:00Z",
-          "tcbStatus": "UpToDate"
+          "tcbStatus": "OutOfDate",
+          "advisoryIDs": [
+            "INTEL-SA-01313"
+          ]
         },
         {
           "tcb": {
@@ -14224,7 +15168,8 @@
           "advisoryIDs": [
             "INTEL-SA-01079",
             "INTEL-SA-01103",
-            "INTEL-SA-01111"
+            "INTEL-SA-01111",
+            "INTEL-SA-01313"
           ]
         },
         {
@@ -14311,23 +15256,24 @@
             "INTEL-SA-00837",
             "INTEL-SA-01079",
             "INTEL-SA-01103",
-            "INTEL-SA-01111"
+            "INTEL-SA-01111",
+            "INTEL-SA-01313"
           ]
         }
       ]
     },
-    "signature": "0951f0e4289a7a13f509a40200219e2b3d698d11bbb10096d453cbe747caf36127b993a7a2bf1243272fa0395d7de6b25ebf6de46e127067fdc694af0cea2479"
+    "signature": "ec706593b8c66ea0847c06012aec1be7618cd21548777ffc228b4d39f5e6637234b80ae683401671da3bcab9e186f089cef96c0e7a059a41157383af2aa34a12"
   },
   {
     "tcbInfo": {
       "id": "TDX",
       "version": 3,
-      "issueDate": "2025-08-13T00:31:42Z",
-      "nextUpdate": "2025-09-12T00:31:42Z",
+      "issueDate": "2025-08-14T01:02:02Z",
+      "nextUpdate": "2025-09-13T01:02:02Z",
       "fmspc": "B0C06F000000",
       "pceId": "0000",
       "tcbType": 0,
-      "tcbEvaluationDataNumber": 19,
+      "tcbEvaluationDataNumber": 20,
       "tdxModule": {
         "mrsigner": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
         "attributes": "0000000000000000",
@@ -14342,10 +15288,17 @@
           "tcbLevels": [
             {
               "tcb": {
+                "isvsvn": 5
+              },
+              "tcbDate": "2025-08-13T00:00:00Z",
+              "tcbStatus": "UpToDate"
+            },
+            {
+              "tcb": {
                 "isvsvn": 3
               },
               "tcbDate": "2025-05-14T00:00:00Z",
-              "tcbStatus": "UpToDate"
+              "tcbStatus": "OutOfDate"
             }
           ]
         },
@@ -14357,10 +15310,17 @@
           "tcbLevels": [
             {
               "tcb": {
+                "isvsvn": 11
+              },
+              "tcbDate": "2025-08-13T00:00:00Z",
+              "tcbStatus": "UpToDate"
+            },
+            {
+              "tcb": {
                 "isvsvn": 6
               },
               "tcbDate": "2025-05-14T00:00:00Z",
-              "tcbStatus": "UpToDate"
+              "tcbStatus": "OutOfDate"
             },
             {
               "tcb": {
@@ -14388,6 +15348,130 @@
         }
       ],
       "tcbLevels": [
+        {
+          "tcb": {
+            "sgxtcbcomponents": [
+              {
+                "svn": 4,
+                "category": "BIOS",
+                "type": "Early Microcode Update"
+              },
+              {
+                "svn": 4,
+                "category": "OS/VMM",
+                "type": "SGX Late Microcode Update"
+              },
+              {
+                "svn": 2,
+                "category": "OS/VMM",
+                "type": "TXT SINIT"
+              },
+              {
+                "svn": 2,
+                "category": "BIOS"
+              },
+              {
+                "svn": 4,
+                "category": "BIOS"
+              },
+              {
+                "svn": 1,
+                "category": "BIOS"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 5,
+                "category": "OS/VMM",
+                "type": "SEAMLDR ACM"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              }
+            ],
+            "pcesvn": 11,
+            "tdxtcbcomponents": [
+              {
+                "svn": 5,
+                "category": "OS/VMM",
+                "type": "TDX Module"
+              },
+              {
+                "svn": 0,
+                "category": "OS/VMM",
+                "type": "TDX Module"
+              },
+              {
+                "svn": 4,
+                "category": "OS/VMM",
+                "type": "TDX Late Microcode Update"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              }
+            ]
+          },
+          "tcbDate": "2025-08-13T00:00:00Z",
+          "tcbStatus": "UpToDate"
+        },
         {
           "tcb": {
             "sgxtcbcomponents": [
@@ -14510,7 +15594,13 @@
             ]
           },
           "tcbDate": "2025-05-14T00:00:00Z",
-          "tcbStatus": "UpToDate"
+          "tcbStatus": "OutOfDate",
+          "advisoryIDs": [
+            "INTEL-SA-01192",
+            "INTEL-SA-01245",
+            "INTEL-SA-01312",
+            "INTEL-SA-01313"
+          ]
         },
         {
           "tcb": {
@@ -14640,7 +15730,11 @@
             "INTEL-SA-01079",
             "INTEL-SA-01099",
             "INTEL-SA-01103",
-            "INTEL-SA-01111"
+            "INTEL-SA-01111",
+            "INTEL-SA-01192",
+            "INTEL-SA-01245",
+            "INTEL-SA-01312",
+            "INTEL-SA-01313"
           ]
         },
         {
@@ -14785,24 +15879,96 @@
             "INTEL-SA-01079",
             "INTEL-SA-01099",
             "INTEL-SA-01103",
-            "INTEL-SA-01111"
+            "INTEL-SA-01111",
+            "INTEL-SA-01192",
+            "INTEL-SA-01245",
+            "INTEL-SA-01312",
+            "INTEL-SA-01313"
           ]
         }
       ]
     },
-    "signature": "d73953b82a4fe92106a0cd365233afef59c284f5862739bba5419ea0f588a5eb21426d1723b25b6901c8a04e62ccd230a27c33908c97ea3c39bc1c9a64385a97"
+    "signature": "d1f9fa4364d12a42214eade03fa5d83ca4cc326e845e7c0d8f19a8abefecef592a920cd0431c6afa093a2781ecb73a62bd482e1a4205ce9056d6b22f5b8beea2"
   },
   {
     "tcbInfo": {
       "id": "SGX",
       "version": 3,
-      "issueDate": "2025-08-13T00:45:00Z",
-      "nextUpdate": "2025-09-12T00:45:00Z",
+      "issueDate": "2025-08-14T01:02:05Z",
+      "nextUpdate": "2025-09-13T01:02:05Z",
       "fmspc": "20A06F000000",
       "pceId": "0000",
       "tcbType": 0,
-      "tcbEvaluationDataNumber": 19,
+      "tcbEvaluationDataNumber": 20,
       "tcbLevels": [
+        {
+          "tcb": {
+            "sgxtcbcomponents": [
+              {
+                "svn": 5,
+                "category": "BIOS",
+                "type": "Early Microcode Update"
+              },
+              {
+                "svn": 5,
+                "category": "OS/VMM",
+                "type": "SGX Late Microcode Update"
+              },
+              {
+                "svn": 2,
+                "category": "OS/VMM",
+                "type": "TXT SINIT"
+              },
+              {
+                "svn": 2,
+                "category": "BIOS"
+              },
+              {
+                "svn": 5,
+                "category": "BIOS"
+              },
+              {
+                "svn": 255,
+                "category": "BIOS"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 2,
+                "category": "OS/VMM",
+                "type": "SEAMLDR ACM"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              }
+            ],
+            "pcesvn": 13
+          },
+          "tcbDate": "2025-08-13T00:00:00Z",
+          "tcbStatus": "UpToDate"
+        },
         {
           "tcb": {
             "sgxtcbcomponents": [
@@ -14869,7 +16035,11 @@
             "pcesvn": 13
           },
           "tcbDate": "2025-05-14T00:00:00Z",
-          "tcbStatus": "UpToDate"
+          "tcbStatus": "OutOfDate",
+          "advisoryIDs": [
+            "INTEL-SA-01313",
+            "INTEL-SA-01367"
+          ]
         },
         {
           "tcb": {
@@ -14941,7 +16111,9 @@
           "advisoryIDs": [
             "INTEL-SA-01268",
             "INTEL-SA-01273",
-            "INTEL-SA-01278"
+            "INTEL-SA-01278",
+            "INTEL-SA-01313",
+            "INTEL-SA-01367"
           ]
         },
         {
@@ -15014,23 +16186,25 @@
           "advisoryIDs": [
             "INTEL-SA-01268",
             "INTEL-SA-01273",
-            "INTEL-SA-01278"
+            "INTEL-SA-01278",
+            "INTEL-SA-01313",
+            "INTEL-SA-01367"
           ]
         }
       ]
     },
-    "signature": "d233556e6d104e7a8962b8e1693af6b046c5e73180ff643c5fe8e76844feb32cc96c99ccbd97aee68a4083947226f06eb30e20ae4d854ffa818f39d8cf932ad7"
+    "signature": "1e17fe891c1a82041a082b8f020ed902438ae2c7b919e1e79aeaa904e624cd3e4a4c223230d30d09b7050a17c8b0cb468d7e9227107780a9623cca87536e8e76"
   },
   {
     "tcbInfo": {
       "id": "TDX",
       "version": 3,
-      "issueDate": "2025-08-13T00:45:01Z",
-      "nextUpdate": "2025-09-12T00:45:01Z",
+      "issueDate": "2025-08-14T01:02:04Z",
+      "nextUpdate": "2025-09-13T01:02:04Z",
       "fmspc": "20A06F000000",
       "pceId": "0000",
       "tcbType": 0,
-      "tcbEvaluationDataNumber": 19,
+      "tcbEvaluationDataNumber": 20,
       "tdxModule": {
         "mrsigner": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
         "attributes": "0000000000000000",
@@ -15045,10 +16219,17 @@
           "tcbLevels": [
             {
               "tcb": {
+                "isvsvn": 5
+              },
+              "tcbDate": "2025-08-13T00:00:00Z",
+              "tcbStatus": "UpToDate"
+            },
+            {
+              "tcb": {
                 "isvsvn": 3
               },
               "tcbDate": "2025-05-14T00:00:00Z",
-              "tcbStatus": "UpToDate"
+              "tcbStatus": "OutOfDate"
             }
           ]
         },
@@ -15060,10 +16241,17 @@
           "tcbLevels": [
             {
               "tcb": {
+                "isvsvn": 11
+              },
+              "tcbDate": "2025-08-13T00:00:00Z",
+              "tcbStatus": "UpToDate"
+            },
+            {
+              "tcb": {
                 "isvsvn": 6
               },
               "tcbDate": "2025-05-14T00:00:00Z",
-              "tcbStatus": "UpToDate"
+              "tcbStatus": "OutOfDate"
             },
             {
               "tcb": {
@@ -15091,6 +16279,130 @@
         }
       ],
       "tcbLevels": [
+        {
+          "tcb": {
+            "sgxtcbcomponents": [
+              {
+                "svn": 5,
+                "category": "BIOS",
+                "type": "Early Microcode Update"
+              },
+              {
+                "svn": 5,
+                "category": "OS/VMM",
+                "type": "SGX Late Microcode Update"
+              },
+              {
+                "svn": 2,
+                "category": "OS/VMM",
+                "type": "TXT SINIT"
+              },
+              {
+                "svn": 2,
+                "category": "BIOS"
+              },
+              {
+                "svn": 5,
+                "category": "BIOS"
+              },
+              {
+                "svn": 255,
+                "category": "BIOS"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 2,
+                "category": "OS/VMM",
+                "type": "SEAMLDR ACM"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              }
+            ],
+            "pcesvn": 13,
+            "tdxtcbcomponents": [
+              {
+                "svn": 5,
+                "category": "OS/VMM",
+                "type": "TDX Module"
+              },
+              {
+                "svn": 0,
+                "category": "OS/VMM",
+                "type": "TDX Module"
+              },
+              {
+                "svn": 5,
+                "category": "OS/VMM",
+                "type": "TDX Late Microcode Update"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              }
+            ]
+          },
+          "tcbDate": "2025-08-13T00:00:00Z",
+          "tcbStatus": "UpToDate"
+        },
         {
           "tcb": {
             "sgxtcbcomponents": [
@@ -15213,7 +16525,15 @@
             ]
           },
           "tcbDate": "2025-05-14T00:00:00Z",
-          "tcbStatus": "UpToDate"
+          "tcbStatus": "OutOfDate",
+          "advisoryIDs": [
+            "INTEL-SA-01192",
+            "INTEL-SA-01245",
+            "INTEL-SA-01311",
+            "INTEL-SA-01312",
+            "INTEL-SA-01313",
+            "INTEL-SA-01367"
+          ]
         },
         {
           "tcb": {
@@ -15341,7 +16661,13 @@
           "advisoryIDs": [
             "INTEL-SA-01268",
             "INTEL-SA-01273",
-            "INTEL-SA-01278"
+            "INTEL-SA-01278",
+            "INTEL-SA-01192",
+            "INTEL-SA-01245",
+            "INTEL-SA-01311",
+            "INTEL-SA-01312",
+            "INTEL-SA-01313",
+            "INTEL-SA-01367"
           ]
         },
         {
@@ -15470,23 +16796,29 @@
           "advisoryIDs": [
             "INTEL-SA-01268",
             "INTEL-SA-01273",
-            "INTEL-SA-01278"
+            "INTEL-SA-01278",
+            "INTEL-SA-01192",
+            "INTEL-SA-01245",
+            "INTEL-SA-01311",
+            "INTEL-SA-01312",
+            "INTEL-SA-01313",
+            "INTEL-SA-01367"
           ]
         }
       ]
     },
-    "signature": "c10c4961afd476409e97118840bc87194fb9e7e3ccb81e44e617738d63610eff7a2c8ddd01340d732a1f048799dc5aff6fbb44357f0c638ff987552381f22f90"
+    "signature": "69512d536ca807d98f4b1976268ff80c603813989f8cbf7b0359e34ace3e4a8e514f84a83f06251aa98afb408b77a13aecf2b30254cfba8662d97d04fc159f6d"
   },
   {
     "tcbInfo": {
       "id": "SGX",
       "version": 3,
-      "issueDate": "2025-08-13T00:32:06Z",
-      "nextUpdate": "2025-09-12T00:32:06Z",
+      "issueDate": "2025-08-14T01:32:20Z",
+      "nextUpdate": "2025-09-13T01:32:20Z",
       "fmspc": "00906ED50000",
       "pceId": "0000",
       "tcbType": 0,
-      "tcbEvaluationDataNumber": 19,
+      "tcbEvaluationDataNumber": 20,
       "tcbLevels": [
         {
           "tcb": {
@@ -15542,7 +16874,7 @@
             ],
             "pcesvn": 13
           },
-          "tcbDate": "2025-05-14T00:00:00Z",
+          "tcbDate": "2025-08-13T00:00:00Z",
           "tcbStatus": "SWHardeningNeeded",
           "advisoryIDs": [
             "INTEL-SA-00334",
@@ -15603,7 +16935,7 @@
             ],
             "pcesvn": 13
           },
-          "tcbDate": "2025-05-14T00:00:00Z",
+          "tcbDate": "2025-08-13T00:00:00Z",
           "tcbStatus": "ConfigurationAndSWHardeningNeeded",
           "advisoryIDs": [
             "INTEL-SA-00219",
@@ -16945,19 +18277,87 @@
         }
       ]
     },
-    "signature": "d0fa13b2dcb51caa8d921ade58460b4da83e9446bbee918b2337e70032bd2ae0540be6f7e274da4ef0b0eae28650c5785f4fa7d7380f16182add65f976581914"
+    "signature": "2eeb8484aecf3b2eeff366ecf522da34e60e5a5e382c8adaa826dac34ea0ca15e042dec68fe6c4f84a70d845185c614850793a676be6f32ed1f50cde5fe7639c"
   },
   {
     "tcbInfo": {
       "id": "SGX",
       "version": 3,
-      "issueDate": "2025-08-13T01:01:41Z",
-      "nextUpdate": "2025-09-12T01:01:41Z",
+      "issueDate": "2025-08-14T01:02:01Z",
+      "nextUpdate": "2025-09-13T01:02:01Z",
       "fmspc": "60A06F000000",
       "pceId": "0000",
       "tcbType": 0,
-      "tcbEvaluationDataNumber": 19,
+      "tcbEvaluationDataNumber": 20,
       "tcbLevels": [
+        {
+          "tcb": {
+            "sgxtcbcomponents": [
+              {
+                "svn": 5,
+                "category": "BIOS",
+                "type": "Early Microcode Update"
+              },
+              {
+                "svn": 5,
+                "category": "OS/VMM",
+                "type": "SGX Late Microcode Update"
+              },
+              {
+                "svn": 2,
+                "category": "OS/VMM",
+                "type": "TXT SINIT"
+              },
+              {
+                "svn": 2,
+                "category": "BIOS"
+              },
+              {
+                "svn": 5,
+                "category": "BIOS"
+              },
+              {
+                "svn": 255,
+                "category": "BIOS"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 2,
+                "category": "OS/VMM",
+                "type": "SEAMLDR ACM"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              }
+            ],
+            "pcesvn": 13
+          },
+          "tcbDate": "2025-08-13T00:00:00Z",
+          "tcbStatus": "UpToDate"
+        },
         {
           "tcb": {
             "sgxtcbcomponents": [
@@ -17024,7 +18424,11 @@
             "pcesvn": 13
           },
           "tcbDate": "2025-05-14T00:00:00Z",
-          "tcbStatus": "UpToDate"
+          "tcbStatus": "OutOfDate",
+          "advisoryIDs": [
+            "INTEL-SA-01313",
+            "INTEL-SA-01367"
+          ]
         },
         {
           "tcb": {
@@ -17096,7 +18500,9 @@
           "advisoryIDs": [
             "INTEL-SA-01268",
             "INTEL-SA-01273",
-            "INTEL-SA-01278"
+            "INTEL-SA-01278",
+            "INTEL-SA-01313",
+            "INTEL-SA-01367"
           ]
         },
         {
@@ -17169,23 +18575,25 @@
           "advisoryIDs": [
             "INTEL-SA-01268",
             "INTEL-SA-01273",
-            "INTEL-SA-01278"
+            "INTEL-SA-01278",
+            "INTEL-SA-01313",
+            "INTEL-SA-01367"
           ]
         }
       ]
     },
-    "signature": "4608a4e193c2ef65f6eedf5925e3605bf4dda29d654a32e06ac31b6ef1c5e7092094f828b2ef274a7deaa6a166983b7c7381745205e2d7faa490ec961b6a0701"
+    "signature": "96630b60f0054eb7097426ab139884c6cef00aca873f83fdda2cc494aad2d9097c2e7c36f3d65713f9b5dedbc9fe79fde67a2d10f94bbc5fd7d10b5d863bd4d9"
   },
   {
     "tcbInfo": {
       "id": "TDX",
       "version": 3,
-      "issueDate": "2025-08-13T01:01:41Z",
-      "nextUpdate": "2025-09-12T01:01:41Z",
+      "issueDate": "2025-08-14T01:02:01Z",
+      "nextUpdate": "2025-09-13T01:02:01Z",
       "fmspc": "60A06F000000",
       "pceId": "0000",
       "tcbType": 0,
-      "tcbEvaluationDataNumber": 19,
+      "tcbEvaluationDataNumber": 20,
       "tdxModule": {
         "mrsigner": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
         "attributes": "0000000000000000",
@@ -17200,10 +18608,17 @@
           "tcbLevels": [
             {
               "tcb": {
+                "isvsvn": 5
+              },
+              "tcbDate": "2025-08-13T00:00:00Z",
+              "tcbStatus": "UpToDate"
+            },
+            {
+              "tcb": {
                 "isvsvn": 3
               },
               "tcbDate": "2025-05-14T00:00:00Z",
-              "tcbStatus": "UpToDate"
+              "tcbStatus": "OutOfDate"
             }
           ]
         },
@@ -17215,10 +18630,17 @@
           "tcbLevels": [
             {
               "tcb": {
+                "isvsvn": 11
+              },
+              "tcbDate": "2025-08-13T00:00:00Z",
+              "tcbStatus": "UpToDate"
+            },
+            {
+              "tcb": {
                 "isvsvn": 6
               },
               "tcbDate": "2025-05-14T00:00:00Z",
-              "tcbStatus": "UpToDate"
+              "tcbStatus": "OutOfDate"
             },
             {
               "tcb": {
@@ -17246,6 +18668,130 @@
         }
       ],
       "tcbLevels": [
+        {
+          "tcb": {
+            "sgxtcbcomponents": [
+              {
+                "svn": 5,
+                "category": "BIOS",
+                "type": "Early Microcode Update"
+              },
+              {
+                "svn": 5,
+                "category": "OS/VMM",
+                "type": "SGX Late Microcode Update"
+              },
+              {
+                "svn": 2,
+                "category": "OS/VMM",
+                "type": "TXT SINIT"
+              },
+              {
+                "svn": 2,
+                "category": "BIOS"
+              },
+              {
+                "svn": 5,
+                "category": "BIOS"
+              },
+              {
+                "svn": 255,
+                "category": "BIOS"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 2,
+                "category": "OS/VMM",
+                "type": "SEAMLDR ACM"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              }
+            ],
+            "pcesvn": 13,
+            "tdxtcbcomponents": [
+              {
+                "svn": 5,
+                "category": "OS/VMM",
+                "type": "TDX Module"
+              },
+              {
+                "svn": 0,
+                "category": "OS/VMM",
+                "type": "TDX Module"
+              },
+              {
+                "svn": 5,
+                "category": "OS/VMM",
+                "type": "TDX Late Microcode Update"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              }
+            ]
+          },
+          "tcbDate": "2025-08-13T00:00:00Z",
+          "tcbStatus": "UpToDate"
+        },
         {
           "tcb": {
             "sgxtcbcomponents": [
@@ -17368,7 +18914,15 @@
             ]
           },
           "tcbDate": "2025-05-14T00:00:00Z",
-          "tcbStatus": "UpToDate"
+          "tcbStatus": "OutOfDate",
+          "advisoryIDs": [
+            "INTEL-SA-01192",
+            "INTEL-SA-01245",
+            "INTEL-SA-01311",
+            "INTEL-SA-01312",
+            "INTEL-SA-01313",
+            "INTEL-SA-01367"
+          ]
         },
         {
           "tcb": {
@@ -17496,7 +19050,13 @@
           "advisoryIDs": [
             "INTEL-SA-01268",
             "INTEL-SA-01273",
-            "INTEL-SA-01278"
+            "INTEL-SA-01278",
+            "INTEL-SA-01192",
+            "INTEL-SA-01245",
+            "INTEL-SA-01311",
+            "INTEL-SA-01312",
+            "INTEL-SA-01313",
+            "INTEL-SA-01367"
           ]
         },
         {
@@ -17625,23 +19185,29 @@
           "advisoryIDs": [
             "INTEL-SA-01268",
             "INTEL-SA-01273",
-            "INTEL-SA-01278"
+            "INTEL-SA-01278",
+            "INTEL-SA-01192",
+            "INTEL-SA-01245",
+            "INTEL-SA-01311",
+            "INTEL-SA-01312",
+            "INTEL-SA-01313",
+            "INTEL-SA-01367"
           ]
         }
       ]
     },
-    "signature": "950e98bc0a595b6e930de63676694d20ae4ac536caa200c1b7eb62bef651ee9fc3ccf22b3f17fb3e4b44defbc12d4032c6437dff049c27a1a03dab66f2942651"
+    "signature": "c0c8bd991e75f616b1ddc0148727b9145ab77c817587960d908e35f23f1786fa8dca79da0451b2753e43764200d626545cc104168239ee9fcdb982efb0d5e078"
   },
   {
     "tcbInfo": {
       "id": "SGX",
       "version": 3,
-      "issueDate": "2025-08-13T00:45:00Z",
-      "nextUpdate": "2025-09-12T00:45:00Z",
+      "issueDate": "2025-08-14T01:01:49Z",
+      "nextUpdate": "2025-09-13T01:01:49Z",
       "fmspc": "00A065510000",
       "pceId": "0000",
       "tcbType": 0,
-      "tcbEvaluationDataNumber": 19,
+      "tcbEvaluationDataNumber": 20,
       "tcbLevels": [
         {
           "tcb": {
@@ -17697,7 +19263,7 @@
             ],
             "pcesvn": 13
           },
-          "tcbDate": "2025-05-14T00:00:00Z",
+          "tcbDate": "2025-08-13T00:00:00Z",
           "tcbStatus": "SWHardeningNeeded",
           "advisoryIDs": [
             "INTEL-SA-00334",
@@ -17758,7 +19324,7 @@
             ],
             "pcesvn": 13
           },
-          "tcbDate": "2025-05-14T00:00:00Z",
+          "tcbDate": "2025-08-13T00:00:00Z",
           "tcbStatus": "ConfigurationAndSWHardeningNeeded",
           "advisoryIDs": [
             "INTEL-SA-00289",
@@ -18564,18 +20130,18 @@
         }
       ]
     },
-    "signature": "bd7c36329661f27e52ccc3d461adeb9fa1a318b9e60d63fe99b373131c620aee6e071bb6f26a7bb4e59756385f136ada2a12be50f5aea1823bb4016d19bc28dc"
+    "signature": "bdbf3d13df296bcda4fae02306dbff018baef4b9d1e966e1bfb247b0533e2b01e6ef3c47d0d84e9b647f08f95e6e181a20bcc1845d0e61e410e1792fc6a6c97d"
   },
   {
     "tcbInfo": {
       "id": "SGX",
       "version": 3,
-      "issueDate": "2025-08-13T00:47:11Z",
-      "nextUpdate": "2025-09-12T00:47:11Z",
+      "issueDate": "2025-08-14T00:32:25Z",
+      "nextUpdate": "2025-09-13T00:32:25Z",
       "fmspc": "30606A000000",
       "pceId": "0000",
       "tcbType": 0,
-      "tcbEvaluationDataNumber": 19,
+      "tcbEvaluationDataNumber": 20,
       "tcbLevels": [
         {
           "tcb": {
@@ -18638,7 +20204,7 @@
             ],
             "pcesvn": 13
           },
-          "tcbDate": "2025-05-14T00:00:00Z",
+          "tcbDate": "2025-08-13T00:00:00Z",
           "tcbStatus": "SWHardeningNeeded",
           "advisoryIDs": [
             "INTEL-SA-00615"
@@ -18705,7 +20271,7 @@
             ],
             "pcesvn": 13
           },
-          "tcbDate": "2025-05-14T00:00:00Z",
+          "tcbDate": "2025-08-13T00:00:00Z",
           "tcbStatus": "ConfigurationAndSWHardeningNeeded",
           "advisoryIDs": [
             "INTEL-SA-00657",
@@ -19700,18 +21266,18 @@
         }
       ]
     },
-    "signature": "ab6e9966dbfc03e1708eeef454cfb04bcedeb4cd7beb20ea4e76773f40c57a6f0552b388778f9bc940c0a9cf3e34b387a92ea44acead1d6cd047a757fe5f37f6"
+    "signature": "d78acfed14dab98373ec040b39e7638bcd39a3fcbe880eca4cf0f719bef04eb4b76b54f17f21392c78a9d44f19998e64ab2b0d48cfa2969a31f593cf8151df29"
   },
   {
     "tcbInfo": {
       "id": "SGX",
       "version": 3,
-      "issueDate": "2025-08-13T01:01:28Z",
-      "nextUpdate": "2025-09-12T01:01:28Z",
+      "issueDate": "2025-08-14T01:01:47Z",
+      "nextUpdate": "2025-09-13T01:01:47Z",
       "fmspc": "20806EB70000",
       "pceId": "0000",
       "tcbType": 0,
-      "tcbEvaluationDataNumber": 19,
+      "tcbEvaluationDataNumber": 20,
       "tcbLevels": [
         {
           "tcb": {
@@ -19767,7 +21333,7 @@
             ],
             "pcesvn": 13
           },
-          "tcbDate": "2025-05-14T00:00:00Z",
+          "tcbDate": "2025-08-13T00:00:00Z",
           "tcbStatus": "SWHardeningNeeded",
           "advisoryIDs": [
             "INTEL-SA-00334",
@@ -19828,7 +21394,7 @@
             ],
             "pcesvn": 13
           },
-          "tcbDate": "2025-05-14T00:00:00Z",
+          "tcbDate": "2025-08-13T00:00:00Z",
           "tcbStatus": "ConfigurationAndSWHardeningNeeded",
           "advisoryIDs": [
             "INTEL-SA-00161",
@@ -21202,18 +22768,18 @@
         }
       ]
     },
-    "signature": "9b296f9995b8f65716d109aea095d53ca48c215052f2568f2dabc87f815865fb70d17226d6644c287daa52d8fe56147b3832aee25b911d55beee95b5bffc4ee0"
+    "signature": "550d038fb9579f521472596f92a8e4a872041882f3f7de4f1a22487d387883f27c00d051dd48a26ef9e4d3d95394f5f97726b770f445fa81139d8e24171f2e02"
   },
   {
     "tcbInfo": {
       "id": "SGX",
       "version": 3,
-      "issueDate": "2025-08-13T00:47:02Z",
-      "nextUpdate": "2025-09-12T00:47:02Z",
+      "issueDate": "2025-08-14T01:32:23Z",
+      "nextUpdate": "2025-09-13T01:32:23Z",
       "fmspc": "00906EA10000",
       "pceId": "0000",
       "tcbType": 0,
-      "tcbEvaluationDataNumber": 19,
+      "tcbEvaluationDataNumber": 20,
       "tcbLevels": [
         {
           "tcb": {
@@ -21269,7 +22835,7 @@
             ],
             "pcesvn": 13
           },
-          "tcbDate": "2025-05-14T00:00:00Z",
+          "tcbDate": "2025-08-13T00:00:00Z",
           "tcbStatus": "SWHardeningNeeded",
           "advisoryIDs": [
             "INTEL-SA-00334",
@@ -21330,7 +22896,7 @@
             ],
             "pcesvn": 13
           },
-          "tcbDate": "2025-05-14T00:00:00Z",
+          "tcbDate": "2025-08-13T00:00:00Z",
           "tcbStatus": "ConfigurationAndSWHardeningNeeded",
           "advisoryIDs": [
             "INTEL-SA-00161",
@@ -22785,19 +24351,87 @@
         }
       ]
     },
-    "signature": "26282e5fccb3f12e830bc619e0043d43ec109ee1833fdb1e2621196b37d1a336d238e647fcc20edadb776f3977cd2170438837427f9421dcef5432edda6ff5eb"
+    "signature": "544bae0e5b606ae43a2f0214ac68b5f3faa49afb40a4b579e4d8bbd2aa71533cdd02519a2ddcfbdef787beb3695e18f2e7fbb323ee43d822ef92e31a76b23118"
   },
   {
     "tcbInfo": {
       "id": "SGX",
       "version": 3,
-      "issueDate": "2025-08-13T01:01:37Z",
-      "nextUpdate": "2025-09-12T01:01:37Z",
+      "issueDate": "2025-08-14T01:01:57Z",
+      "nextUpdate": "2025-09-13T01:01:57Z",
       "fmspc": "30806F040000",
       "pceId": "0000",
       "tcbType": 0,
-      "tcbEvaluationDataNumber": 19,
+      "tcbEvaluationDataNumber": 20,
       "tcbLevels": [
+        {
+          "tcb": {
+            "sgxtcbcomponents": [
+              {
+                "svn": 9,
+                "category": "BIOS",
+                "type": "Early Microcode Update"
+              },
+              {
+                "svn": 9,
+                "category": "OS/VMM",
+                "type": "SGX Late Microcode Update"
+              },
+              {
+                "svn": 2,
+                "category": "OS/VMM",
+                "type": "TXT SINIT"
+              },
+              {
+                "svn": 2,
+                "category": "BIOS"
+              },
+              {
+                "svn": 4,
+                "category": "BIOS"
+              },
+              {
+                "svn": 1,
+                "category": "BIOS"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 255,
+                "category": "OS/VMM",
+                "type": "SEAMLDR ACM"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              }
+            ],
+            "pcesvn": 11
+          },
+          "tcbDate": "2025-08-13T00:00:00Z",
+          "tcbStatus": "UpToDate"
+        },
         {
           "tcb": {
             "sgxtcbcomponents": [
@@ -22864,7 +24498,10 @@
             "pcesvn": 11
           },
           "tcbDate": "2025-05-14T00:00:00Z",
-          "tcbStatus": "UpToDate"
+          "tcbStatus": "OutOfDate",
+          "advisoryIDs": [
+            "INTEL-SA-01313"
+          ]
         },
         {
           "tcb": {
@@ -22936,7 +24573,8 @@
           "advisoryIDs": [
             "INTEL-SA-01079",
             "INTEL-SA-01103",
-            "INTEL-SA-01111"
+            "INTEL-SA-01111",
+            "INTEL-SA-01313"
           ]
         },
         {
@@ -23012,7 +24650,8 @@
             "INTEL-SA-00986",
             "INTEL-SA-01079",
             "INTEL-SA-01103",
-            "INTEL-SA-01111"
+            "INTEL-SA-01111",
+            "INTEL-SA-01313"
           ]
         },
         {
@@ -23089,7 +24728,8 @@
             "INTEL-SA-00986",
             "INTEL-SA-01079",
             "INTEL-SA-01103",
-            "INTEL-SA-01111"
+            "INTEL-SA-01111",
+            "INTEL-SA-01313"
           ]
         },
         {
@@ -23179,24 +24819,93 @@
             "INTEL-SA-00986",
             "INTEL-SA-01079",
             "INTEL-SA-01103",
-            "INTEL-SA-01111"
+            "INTEL-SA-01111",
+            "INTEL-SA-01313"
           ]
         }
       ]
     },
-    "signature": "09828cac75e3dce0a08e10a373c73a58173bf8f0c09ed14ebfe4706ca206924c8bd528e19ab405dce50534ebbd43c55a7cebc455d5c3dca551f9b7da6b49f752"
+    "signature": "098b7f13ca6831679d058b44714d45be84cde75e683acc31395375bb61ed5fcf1da6a3ab5499de0de1335746dec36fbcb0ca722aaa097937ebbbb32df1b2999d"
   },
   {
     "tcbInfo": {
       "id": "SGX",
       "version": 3,
-      "issueDate": "2025-08-13T01:01:40Z",
-      "nextUpdate": "2025-09-12T01:01:40Z",
+      "issueDate": "2025-08-14T01:02:00Z",
+      "nextUpdate": "2025-09-13T01:02:00Z",
       "fmspc": "C0806F000000",
       "pceId": "0000",
       "tcbType": 0,
-      "tcbEvaluationDataNumber": 19,
+      "tcbEvaluationDataNumber": 20,
       "tcbLevels": [
+        {
+          "tcb": {
+            "sgxtcbcomponents": [
+              {
+                "svn": 9,
+                "category": "BIOS",
+                "type": "Early Microcode Update"
+              },
+              {
+                "svn": 9,
+                "category": "OS/VMM",
+                "type": "SGX Late Microcode Update"
+              },
+              {
+                "svn": 2,
+                "category": "OS/VMM",
+                "type": "TXT SINIT"
+              },
+              {
+                "svn": 2,
+                "category": "BIOS"
+              },
+              {
+                "svn": 4,
+                "category": "BIOS"
+              },
+              {
+                "svn": 1,
+                "category": "BIOS"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 3,
+                "category": "OS/VMM",
+                "type": "SEAMLDR ACM"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              }
+            ],
+            "pcesvn": 11
+          },
+          "tcbDate": "2025-08-13T00:00:00Z",
+          "tcbStatus": "UpToDate"
+        },
         {
           "tcb": {
             "sgxtcbcomponents": [
@@ -23263,7 +24972,10 @@
             "pcesvn": 11
           },
           "tcbDate": "2025-05-14T00:00:00Z",
-          "tcbStatus": "UpToDate"
+          "tcbStatus": "OutOfDate",
+          "advisoryIDs": [
+            "INTEL-SA-01313"
+          ]
         },
         {
           "tcb": {
@@ -23335,7 +25047,8 @@
           "advisoryIDs": [
             "INTEL-SA-01079",
             "INTEL-SA-01103",
-            "INTEL-SA-01111"
+            "INTEL-SA-01111",
+            "INTEL-SA-01313"
           ]
         },
         {
@@ -23411,7 +25124,8 @@
             "INTEL-SA-00986",
             "INTEL-SA-01079",
             "INTEL-SA-01103",
-            "INTEL-SA-01111"
+            "INTEL-SA-01111",
+            "INTEL-SA-01313"
           ]
         },
         {
@@ -23488,7 +25202,8 @@
             "INTEL-SA-00986",
             "INTEL-SA-01079",
             "INTEL-SA-01103",
-            "INTEL-SA-01111"
+            "INTEL-SA-01111",
+            "INTEL-SA-01313"
           ]
         },
         {
@@ -23570,23 +25285,24 @@
             "INTEL-SA-00986",
             "INTEL-SA-01079",
             "INTEL-SA-01103",
-            "INTEL-SA-01111"
+            "INTEL-SA-01111",
+            "INTEL-SA-01313"
           ]
         }
       ]
     },
-    "signature": "70bd5869487807875621f7fedd96624ed16877991d02ccd23eae633dd2364117a32039fb2c6b094b3a2ef01d8272193535b00cf2cf1ae191fa3e34cbce8886ff"
+    "signature": "9096e5aed36cf4b1ecfa6fc5910778fb286811220cfee21bb3492a30bb7a3c958810a642c5c01e1d3d54452d6f2ed0cb9792aec1c63324a0ad1c476a4fce0869"
   },
   {
     "tcbInfo": {
       "id": "TDX",
       "version": 3,
-      "issueDate": "2025-08-13T01:01:40Z",
-      "nextUpdate": "2025-09-12T01:01:40Z",
+      "issueDate": "2025-08-14T01:01:59Z",
+      "nextUpdate": "2025-09-13T01:01:59Z",
       "fmspc": "C0806F000000",
       "pceId": "0000",
       "tcbType": 0,
-      "tcbEvaluationDataNumber": 19,
+      "tcbEvaluationDataNumber": 20,
       "tdxModule": {
         "mrsigner": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
         "attributes": "0000000000000000",
@@ -23601,10 +25317,17 @@
           "tcbLevels": [
             {
               "tcb": {
+                "isvsvn": 5
+              },
+              "tcbDate": "2025-08-13T00:00:00Z",
+              "tcbStatus": "UpToDate"
+            },
+            {
+              "tcb": {
                 "isvsvn": 3
               },
               "tcbDate": "2025-05-14T00:00:00Z",
-              "tcbStatus": "UpToDate"
+              "tcbStatus": "OutOfDate"
             }
           ]
         },
@@ -23616,10 +25339,17 @@
           "tcbLevels": [
             {
               "tcb": {
+                "isvsvn": 11
+              },
+              "tcbDate": "2025-08-13T00:00:00Z",
+              "tcbStatus": "UpToDate"
+            },
+            {
+              "tcb": {
                 "isvsvn": 6
               },
               "tcbDate": "2025-05-14T00:00:00Z",
-              "tcbStatus": "UpToDate"
+              "tcbStatus": "OutOfDate"
             },
             {
               "tcb": {
@@ -23647,6 +25377,130 @@
         }
       ],
       "tcbLevels": [
+        {
+          "tcb": {
+            "sgxtcbcomponents": [
+              {
+                "svn": 9,
+                "category": "BIOS",
+                "type": "Early Microcode Update"
+              },
+              {
+                "svn": 9,
+                "category": "OS/VMM",
+                "type": "SGX Late Microcode Update"
+              },
+              {
+                "svn": 2,
+                "category": "OS/VMM",
+                "type": "TXT SINIT"
+              },
+              {
+                "svn": 2,
+                "category": "BIOS"
+              },
+              {
+                "svn": 4,
+                "category": "BIOS"
+              },
+              {
+                "svn": 1,
+                "category": "BIOS"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 6,
+                "category": "OS/VMM",
+                "type": "SEAMLDR ACM"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              }
+            ],
+            "pcesvn": 11,
+            "tdxtcbcomponents": [
+              {
+                "svn": 5,
+                "category": "OS/VMM",
+                "type": "TDX Module"
+              },
+              {
+                "svn": 0,
+                "category": "OS/VMM",
+                "type": "TDX Module"
+              },
+              {
+                "svn": 9,
+                "category": "OS/VMM",
+                "type": "TDX Late Microcode Update"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              }
+            ]
+          },
+          "tcbDate": "2025-08-13T00:00:00Z",
+          "tcbStatus": "UpToDate"
+        },
         {
           "tcb": {
             "sgxtcbcomponents": [
@@ -23769,7 +25623,13 @@
             ]
           },
           "tcbDate": "2025-05-14T00:00:00Z",
-          "tcbStatus": "UpToDate"
+          "tcbStatus": "OutOfDate",
+          "advisoryIDs": [
+            "INTEL-SA-01192",
+            "INTEL-SA-01245",
+            "INTEL-SA-01312",
+            "INTEL-SA-01313"
+          ]
         },
         {
           "tcb": {
@@ -23901,7 +25761,11 @@
             "INTEL-SA-01079",
             "INTEL-SA-01099",
             "INTEL-SA-01103",
-            "INTEL-SA-01111"
+            "INTEL-SA-01111",
+            "INTEL-SA-01192",
+            "INTEL-SA-01245",
+            "INTEL-SA-01312",
+            "INTEL-SA-01313"
           ]
         },
         {
@@ -24037,7 +25901,11 @@
             "INTEL-SA-01079",
             "INTEL-SA-01099",
             "INTEL-SA-01103",
-            "INTEL-SA-01111"
+            "INTEL-SA-01111",
+            "INTEL-SA-01192",
+            "INTEL-SA-01245",
+            "INTEL-SA-01312",
+            "INTEL-SA-01313"
           ]
         },
         {
@@ -24174,7 +26042,11 @@
             "INTEL-SA-01079",
             "INTEL-SA-01099",
             "INTEL-SA-01103",
-            "INTEL-SA-01111"
+            "INTEL-SA-01111",
+            "INTEL-SA-01192",
+            "INTEL-SA-01245",
+            "INTEL-SA-01312",
+            "INTEL-SA-01313"
           ]
         },
         {
@@ -24316,24 +26188,96 @@
             "INTEL-SA-01079",
             "INTEL-SA-01099",
             "INTEL-SA-01103",
-            "INTEL-SA-01111"
+            "INTEL-SA-01111",
+            "INTEL-SA-01192",
+            "INTEL-SA-01245",
+            "INTEL-SA-01312",
+            "INTEL-SA-01313"
           ]
         }
       ]
     },
-    "signature": "ebf6d76ff64bbc841478003513fdf48ac4f8e261d45c966b95c2c5325477cc53886324bbabf69c0c86631c177e1d530d215f1e22b3488f7b397a392ff5ee6d81"
+    "signature": "9de54ee4a16e32bfb124a8b7b9823889260b811e35a8c4a9b2e34fc9a432917173d1d61d0efda65d64204e89eb6dd57ec44be992bb1061f03024fb57ddce810c"
   },
   {
     "tcbInfo": {
       "id": "SGX",
       "version": 3,
-      "issueDate": "2025-08-13T00:45:00Z",
-      "nextUpdate": "2025-09-12T00:45:00Z",
+      "issueDate": "2025-08-14T01:02:04Z",
+      "nextUpdate": "2025-09-13T01:02:04Z",
       "fmspc": "20A06D080000",
       "pceId": "0000",
       "tcbType": 0,
-      "tcbEvaluationDataNumber": 19,
+      "tcbEvaluationDataNumber": 20,
       "tcbLevels": [
+        {
+          "tcb": {
+            "sgxtcbcomponents": [
+              {
+                "svn": 4,
+                "category": "BIOS",
+                "type": "Early Microcode Update"
+              },
+              {
+                "svn": 4,
+                "category": "OS/VMM",
+                "type": "SGX Late Microcode Update"
+              },
+              {
+                "svn": 2,
+                "category": "OS/VMM",
+                "type": "TXT SINIT"
+              },
+              {
+                "svn": 2,
+                "category": "BIOS"
+              },
+              {
+                "svn": 4,
+                "category": "BIOS"
+              },
+              {
+                "svn": 255,
+                "category": "BIOS"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 2,
+                "category": "OS/VMM",
+                "type": "SEAMLDR ACM"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              }
+            ],
+            "pcesvn": 13
+          },
+          "tcbDate": "2025-08-13T00:00:00Z",
+          "tcbStatus": "UpToDate"
+        },
         {
           "tcb": {
             "sgxtcbcomponents": [
@@ -24400,7 +26344,11 @@
             "pcesvn": 13
           },
           "tcbDate": "2025-05-14T00:00:00Z",
-          "tcbStatus": "UpToDate"
+          "tcbStatus": "OutOfDate",
+          "advisoryIDs": [
+            "INTEL-SA-01313",
+            "INTEL-SA-01367"
+          ]
         },
         {
           "tcb": {
@@ -24468,22 +26416,26 @@
             "pcesvn": 5
           },
           "tcbDate": "2018-01-04T00:00:00Z",
-          "tcbStatus": "OutOfDate"
+          "tcbStatus": "OutOfDate",
+          "advisoryIDs": [
+            "INTEL-SA-01313",
+            "INTEL-SA-01367"
+          ]
         }
       ]
     },
-    "signature": "602b73bda7b1a7b1237de2bd80fc7a66ea350886603fc5e9b22444834c70b8b793fcf0a392ba6756e23490bedaac54068c79233828710470644c0e1c4a987cef"
+    "signature": "101852786a4d4f2febc8102dfb1bafbbbefe319caec7b40d539265d21023af8d1fd027d57fbd6619fd83fb0f2234b65cdd7e839dfef658ad5b0a8d58385fba26"
   },
   {
     "tcbInfo": {
       "id": "TDX",
       "version": 3,
-      "issueDate": "2025-08-13T00:45:01Z",
-      "nextUpdate": "2025-09-12T00:45:01Z",
+      "issueDate": "2025-08-14T01:02:04Z",
+      "nextUpdate": "2025-09-13T01:02:04Z",
       "fmspc": "20A06D080000",
       "pceId": "0000",
       "tcbType": 0,
-      "tcbEvaluationDataNumber": 19,
+      "tcbEvaluationDataNumber": 20,
       "tdxModule": {
         "mrsigner": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
         "attributes": "0000000000000000",
@@ -24498,10 +26450,17 @@
           "tcbLevels": [
             {
               "tcb": {
+                "isvsvn": 5
+              },
+              "tcbDate": "2025-08-13T00:00:00Z",
+              "tcbStatus": "UpToDate"
+            },
+            {
+              "tcb": {
                 "isvsvn": 3
               },
               "tcbDate": "2025-05-14T00:00:00Z",
-              "tcbStatus": "UpToDate"
+              "tcbStatus": "OutOfDate"
             }
           ]
         },
@@ -24513,10 +26472,17 @@
           "tcbLevels": [
             {
               "tcb": {
+                "isvsvn": 11
+              },
+              "tcbDate": "2025-08-13T00:00:00Z",
+              "tcbStatus": "UpToDate"
+            },
+            {
+              "tcb": {
                 "isvsvn": 6
               },
               "tcbDate": "2025-05-14T00:00:00Z",
-              "tcbStatus": "UpToDate"
+              "tcbStatus": "OutOfDate"
             },
             {
               "tcb": {
@@ -24544,6 +26510,130 @@
         }
       ],
       "tcbLevels": [
+        {
+          "tcb": {
+            "sgxtcbcomponents": [
+              {
+                "svn": 4,
+                "category": "BIOS",
+                "type": "Early Microcode Update"
+              },
+              {
+                "svn": 4,
+                "category": "OS/VMM",
+                "type": "SGX Late Microcode Update"
+              },
+              {
+                "svn": 2,
+                "category": "OS/VMM",
+                "type": "TXT SINIT"
+              },
+              {
+                "svn": 2,
+                "category": "BIOS"
+              },
+              {
+                "svn": 4,
+                "category": "BIOS"
+              },
+              {
+                "svn": 255,
+                "category": "BIOS"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 2,
+                "category": "OS/VMM",
+                "type": "SEAMLDR ACM"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              }
+            ],
+            "pcesvn": 13,
+            "tdxtcbcomponents": [
+              {
+                "svn": 5,
+                "category": "OS/VMM",
+                "type": "TDX Module"
+              },
+              {
+                "svn": 0,
+                "category": "OS/VMM",
+                "type": "TDX Module"
+              },
+              {
+                "svn": 4,
+                "category": "OS/VMM",
+                "type": "TDX Late Microcode Update"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              }
+            ]
+          },
+          "tcbDate": "2025-08-13T00:00:00Z",
+          "tcbStatus": "UpToDate"
+        },
         {
           "tcb": {
             "sgxtcbcomponents": [
@@ -24666,7 +26756,15 @@
             ]
           },
           "tcbDate": "2025-05-14T00:00:00Z",
-          "tcbStatus": "UpToDate"
+          "tcbStatus": "OutOfDate",
+          "advisoryIDs": [
+            "INTEL-SA-01192",
+            "INTEL-SA-01245",
+            "INTEL-SA-01311",
+            "INTEL-SA-01312",
+            "INTEL-SA-01313",
+            "INTEL-SA-01367"
+          ]
         },
         {
           "tcb": {
@@ -24790,23 +26888,99 @@
             ]
           },
           "tcbDate": "2018-01-04T00:00:00Z",
-          "tcbStatus": "OutOfDate"
+          "tcbStatus": "OutOfDate",
+          "advisoryIDs": [
+            "INTEL-SA-01192",
+            "INTEL-SA-01245",
+            "INTEL-SA-01311",
+            "INTEL-SA-01312",
+            "INTEL-SA-01313",
+            "INTEL-SA-01367"
+          ]
         }
       ]
     },
-    "signature": "a775c181f4211d839c95eee3803146a49885a5b743c19d12da31491559920b3026e3b06cfd0a85272d2f4ca047dde2621bb21e55a8e3e614c8a5c9a74f497bd0"
+    "signature": "fa0d5a905d4aa89f70569d32ac9f388e027370915d6b717a906ee5bdad906002b65669a7478d25577e26798df55817fea45a96dc05679f1a5d113224934ce90b"
   },
   {
     "tcbInfo": {
       "id": "SGX",
       "version": 3,
-      "issueDate": "2025-08-13T01:01:33Z",
-      "nextUpdate": "2025-09-12T01:01:33Z",
+      "issueDate": "2025-08-14T01:01:53Z",
+      "nextUpdate": "2025-09-13T01:01:53Z",
       "fmspc": "10A06D000000",
       "pceId": "0000",
       "tcbType": 0,
-      "tcbEvaluationDataNumber": 19,
+      "tcbEvaluationDataNumber": 20,
       "tcbLevels": [
+        {
+          "tcb": {
+            "sgxtcbcomponents": [
+              {
+                "svn": 4,
+                "category": "BIOS",
+                "type": "Early Microcode Update"
+              },
+              {
+                "svn": 4,
+                "category": "OS/VMM",
+                "type": "SGX Late Microcode Update"
+              },
+              {
+                "svn": 2,
+                "category": "OS/VMM",
+                "type": "TXT SINIT"
+              },
+              {
+                "svn": 2,
+                "category": "BIOS"
+              },
+              {
+                "svn": 4,
+                "category": "BIOS"
+              },
+              {
+                "svn": 1,
+                "category": "BIOS"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 2,
+                "category": "OS/VMM",
+                "type": "SEAMLDR ACM"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              }
+            ],
+            "pcesvn": 13
+          },
+          "tcbDate": "2025-08-13T00:00:00Z",
+          "tcbStatus": "UpToDate"
+        },
         {
           "tcb": {
             "sgxtcbcomponents": [
@@ -24873,7 +27047,11 @@
             "pcesvn": 13
           },
           "tcbDate": "2025-05-14T00:00:00Z",
-          "tcbStatus": "UpToDate"
+          "tcbStatus": "OutOfDate",
+          "advisoryIDs": [
+            "INTEL-SA-01313",
+            "INTEL-SA-01367"
+          ]
         },
         {
           "tcb": {
@@ -24941,22 +27119,26 @@
             "pcesvn": 5
           },
           "tcbDate": "2018-01-04T00:00:00Z",
-          "tcbStatus": "OutOfDate"
+          "tcbStatus": "OutOfDate",
+          "advisoryIDs": [
+            "INTEL-SA-01313",
+            "INTEL-SA-01367"
+          ]
         }
       ]
     },
-    "signature": "5dc1662edc98959176923ceb24de139cb3d0fc9160764c4ad662d7abfc26c6190d1d11036ec049ebc23f3d65520ad54275de86658812e9c64ac10a10e2cbf0a6"
+    "signature": "61a77887410d2314926fbb30e623bbaa4dee8420002cbf9953a4838c91445e26fe876b93cc46b6b95b312bdb85b52abeef63c7726458e4ee0d73957f9998c16b"
   },
   {
     "tcbInfo": {
       "id": "TDX",
       "version": 3,
-      "issueDate": "2025-08-13T01:01:33Z",
-      "nextUpdate": "2025-09-12T01:01:33Z",
+      "issueDate": "2025-08-14T01:01:52Z",
+      "nextUpdate": "2025-09-13T01:01:52Z",
       "fmspc": "10A06D000000",
       "pceId": "0000",
       "tcbType": 0,
-      "tcbEvaluationDataNumber": 19,
+      "tcbEvaluationDataNumber": 20,
       "tdxModule": {
         "mrsigner": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
         "attributes": "0000000000000000",
@@ -24971,10 +27153,17 @@
           "tcbLevels": [
             {
               "tcb": {
+                "isvsvn": 5
+              },
+              "tcbDate": "2025-08-13T00:00:00Z",
+              "tcbStatus": "UpToDate"
+            },
+            {
+              "tcb": {
                 "isvsvn": 3
               },
               "tcbDate": "2025-05-14T00:00:00Z",
-              "tcbStatus": "UpToDate"
+              "tcbStatus": "OutOfDate"
             }
           ]
         },
@@ -24986,10 +27175,17 @@
           "tcbLevels": [
             {
               "tcb": {
+                "isvsvn": 11
+              },
+              "tcbDate": "2025-08-13T00:00:00Z",
+              "tcbStatus": "UpToDate"
+            },
+            {
+              "tcb": {
                 "isvsvn": 6
               },
               "tcbDate": "2025-05-14T00:00:00Z",
-              "tcbStatus": "UpToDate"
+              "tcbStatus": "OutOfDate"
             },
             {
               "tcb": {
@@ -25017,6 +27213,130 @@
         }
       ],
       "tcbLevels": [
+        {
+          "tcb": {
+            "sgxtcbcomponents": [
+              {
+                "svn": 4,
+                "category": "BIOS",
+                "type": "Early Microcode Update"
+              },
+              {
+                "svn": 4,
+                "category": "OS/VMM",
+                "type": "SGX Late Microcode Update"
+              },
+              {
+                "svn": 2,
+                "category": "OS/VMM",
+                "type": "TXT SINIT"
+              },
+              {
+                "svn": 2,
+                "category": "BIOS"
+              },
+              {
+                "svn": 4,
+                "category": "BIOS"
+              },
+              {
+                "svn": 1,
+                "category": "BIOS"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 2,
+                "category": "OS/VMM",
+                "type": "SEAMLDR ACM"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              }
+            ],
+            "pcesvn": 13,
+            "tdxtcbcomponents": [
+              {
+                "svn": 5,
+                "category": "OS/VMM",
+                "type": "TDX Module"
+              },
+              {
+                "svn": 0,
+                "category": "OS/VMM",
+                "type": "TDX Module"
+              },
+              {
+                "svn": 4,
+                "category": "OS/VMM",
+                "type": "TDX Late Microcode Update"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              }
+            ]
+          },
+          "tcbDate": "2025-08-13T00:00:00Z",
+          "tcbStatus": "UpToDate"
+        },
         {
           "tcb": {
             "sgxtcbcomponents": [
@@ -25139,7 +27459,15 @@
             ]
           },
           "tcbDate": "2025-05-14T00:00:00Z",
-          "tcbStatus": "UpToDate"
+          "tcbStatus": "OutOfDate",
+          "advisoryIDs": [
+            "INTEL-SA-01192",
+            "INTEL-SA-01245",
+            "INTEL-SA-01311",
+            "INTEL-SA-01312",
+            "INTEL-SA-01313",
+            "INTEL-SA-01367"
+          ]
         },
         {
           "tcb": {
@@ -25263,23 +27591,99 @@
             ]
           },
           "tcbDate": "2018-01-04T00:00:00Z",
-          "tcbStatus": "OutOfDate"
+          "tcbStatus": "OutOfDate",
+          "advisoryIDs": [
+            "INTEL-SA-01192",
+            "INTEL-SA-01245",
+            "INTEL-SA-01311",
+            "INTEL-SA-01312",
+            "INTEL-SA-01313",
+            "INTEL-SA-01367"
+          ]
         }
       ]
     },
-    "signature": "366848cade9a9081629a83ae2e4edc4dde2b8c684d6a8ae210cba8268da91ac5f577e59f04a8417e32b52c1d5142f324267bc2f668d624bc6e5aad60ecc23f85"
+    "signature": "a7216e5f6fe47057199c46619a5305473af7401bc58dbf4afb065b17b2d70fa39533c08425000c6edeb02954faa774fcc0daeef8ae07bf45834cafb945e80b64"
   },
   {
     "tcbInfo": {
       "id": "SGX",
       "version": 3,
-      "issueDate": "2025-08-13T00:32:14Z",
-      "nextUpdate": "2025-09-12T00:32:14Z",
+      "issueDate": "2025-08-14T00:32:29Z",
+      "nextUpdate": "2025-09-13T00:32:29Z",
       "fmspc": "00806F050000",
       "pceId": "0000",
       "tcbType": 0,
-      "tcbEvaluationDataNumber": 19,
+      "tcbEvaluationDataNumber": 20,
       "tcbLevels": [
+        {
+          "tcb": {
+            "sgxtcbcomponents": [
+              {
+                "svn": 9,
+                "category": "BIOS",
+                "type": "Early Microcode Update"
+              },
+              {
+                "svn": 9,
+                "category": "OS/VMM",
+                "type": "SGX Late Microcode Update"
+              },
+              {
+                "svn": 2,
+                "category": "OS/VMM",
+                "type": "TXT SINIT"
+              },
+              {
+                "svn": 2,
+                "category": "BIOS"
+              },
+              {
+                "svn": 4,
+                "category": "BIOS"
+              },
+              {
+                "svn": 1,
+                "category": "BIOS"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 3,
+                "category": "OS/VMM",
+                "type": "SEAMLDR ACM"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              }
+            ],
+            "pcesvn": 11
+          },
+          "tcbDate": "2025-08-13T00:00:00Z",
+          "tcbStatus": "UpToDate"
+        },
         {
           "tcb": {
             "sgxtcbcomponents": [
@@ -25346,7 +27750,10 @@
             "pcesvn": 11
           },
           "tcbDate": "2025-05-14T00:00:00Z",
-          "tcbStatus": "UpToDate"
+          "tcbStatus": "OutOfDate",
+          "advisoryIDs": [
+            "INTEL-SA-01313"
+          ]
         },
         {
           "tcb": {
@@ -25418,7 +27825,8 @@
           "advisoryIDs": [
             "INTEL-SA-01079",
             "INTEL-SA-01103",
-            "INTEL-SA-01111"
+            "INTEL-SA-01111",
+            "INTEL-SA-01313"
           ]
         },
         {
@@ -25494,7 +27902,8 @@
             "INTEL-SA-00986",
             "INTEL-SA-01079",
             "INTEL-SA-01103",
-            "INTEL-SA-01111"
+            "INTEL-SA-01111",
+            "INTEL-SA-01313"
           ]
         },
         {
@@ -25571,7 +27980,8 @@
             "INTEL-SA-00986",
             "INTEL-SA-01079",
             "INTEL-SA-01103",
-            "INTEL-SA-01111"
+            "INTEL-SA-01111",
+            "INTEL-SA-01313"
           ]
         },
         {
@@ -25661,23 +28071,24 @@
             "INTEL-SA-00986",
             "INTEL-SA-01079",
             "INTEL-SA-01103",
-            "INTEL-SA-01111"
+            "INTEL-SA-01111",
+            "INTEL-SA-01313"
           ]
         }
       ]
     },
-    "signature": "182d2975094dcdd7bf2b1edb50dabf23450716e5934f998d157d3f12dbcdae50aff594a2ef69c994551f530c3fab4cb4dd32a3b826ffac992a0bd589e3844e19"
+    "signature": "059ff1f5809e90696199554bdc8fc144d910fbfa564bd6485574770ff09b4269ae666e957598aa1634e64f1c2369301abf2e559b0aee3bf296a91bbc3e0ff52e"
   },
   {
     "tcbInfo": {
       "id": "TDX",
       "version": 3,
-      "issueDate": "2025-08-13T00:31:38Z",
-      "nextUpdate": "2025-09-12T00:31:38Z",
+      "issueDate": "2025-08-14T01:00:02Z",
+      "nextUpdate": "2025-09-13T01:00:02Z",
       "fmspc": "00806F050000",
       "pceId": "0000",
       "tcbType": 0,
-      "tcbEvaluationDataNumber": 19,
+      "tcbEvaluationDataNumber": 20,
       "tdxModule": {
         "mrsigner": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
         "attributes": "0000000000000000",
@@ -25692,10 +28103,17 @@
           "tcbLevels": [
             {
               "tcb": {
+                "isvsvn": 5
+              },
+              "tcbDate": "2025-08-13T00:00:00Z",
+              "tcbStatus": "UpToDate"
+            },
+            {
+              "tcb": {
                 "isvsvn": 3
               },
               "tcbDate": "2025-05-14T00:00:00Z",
-              "tcbStatus": "UpToDate"
+              "tcbStatus": "OutOfDate"
             }
           ]
         },
@@ -25707,10 +28125,17 @@
           "tcbLevels": [
             {
               "tcb": {
+                "isvsvn": 11
+              },
+              "tcbDate": "2025-08-13T00:00:00Z",
+              "tcbStatus": "UpToDate"
+            },
+            {
+              "tcb": {
                 "isvsvn": 6
               },
               "tcbDate": "2025-05-14T00:00:00Z",
-              "tcbStatus": "UpToDate"
+              "tcbStatus": "OutOfDate"
             },
             {
               "tcb": {
@@ -25738,6 +28163,130 @@
         }
       ],
       "tcbLevels": [
+        {
+          "tcb": {
+            "sgxtcbcomponents": [
+              {
+                "svn": 9,
+                "category": "BIOS",
+                "type": "Early Microcode Update"
+              },
+              {
+                "svn": 9,
+                "category": "OS/VMM",
+                "type": "SGX Late Microcode Update"
+              },
+              {
+                "svn": 2,
+                "category": "OS/VMM",
+                "type": "TXT SINIT"
+              },
+              {
+                "svn": 2,
+                "category": "BIOS"
+              },
+              {
+                "svn": 4,
+                "category": "BIOS"
+              },
+              {
+                "svn": 1,
+                "category": "BIOS"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 6,
+                "category": "OS/VMM",
+                "type": "SEAMLDR ACM"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              }
+            ],
+            "pcesvn": 11,
+            "tdxtcbcomponents": [
+              {
+                "svn": 5,
+                "category": "OS/VMM",
+                "type": "TDX Module"
+              },
+              {
+                "svn": 0,
+                "category": "OS/VMM",
+                "type": "TDX Module"
+              },
+              {
+                "svn": 9,
+                "category": "OS/VMM",
+                "type": "TDX Late Microcode Update"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              }
+            ]
+          },
+          "tcbDate": "2025-08-13T00:00:00Z",
+          "tcbStatus": "UpToDate"
+        },
         {
           "tcb": {
             "sgxtcbcomponents": [
@@ -25860,7 +28409,13 @@
             ]
           },
           "tcbDate": "2025-05-14T00:00:00Z",
-          "tcbStatus": "UpToDate"
+          "tcbStatus": "OutOfDate",
+          "advisoryIDs": [
+            "INTEL-SA-01192",
+            "INTEL-SA-01245",
+            "INTEL-SA-01312",
+            "INTEL-SA-01313"
+          ]
         },
         {
           "tcb": {
@@ -25992,7 +28547,11 @@
             "INTEL-SA-01079",
             "INTEL-SA-01099",
             "INTEL-SA-01103",
-            "INTEL-SA-01111"
+            "INTEL-SA-01111",
+            "INTEL-SA-01192",
+            "INTEL-SA-01245",
+            "INTEL-SA-01312",
+            "INTEL-SA-01313"
           ]
         },
         {
@@ -26128,7 +28687,11 @@
             "INTEL-SA-01079",
             "INTEL-SA-01099",
             "INTEL-SA-01103",
-            "INTEL-SA-01111"
+            "INTEL-SA-01111",
+            "INTEL-SA-01192",
+            "INTEL-SA-01245",
+            "INTEL-SA-01312",
+            "INTEL-SA-01313"
           ]
         },
         {
@@ -26265,7 +28828,11 @@
             "INTEL-SA-01079",
             "INTEL-SA-01099",
             "INTEL-SA-01103",
-            "INTEL-SA-01111"
+            "INTEL-SA-01111",
+            "INTEL-SA-01192",
+            "INTEL-SA-01245",
+            "INTEL-SA-01312",
+            "INTEL-SA-01313"
           ]
         },
         {
@@ -26415,23 +28982,27 @@
             "INTEL-SA-01079",
             "INTEL-SA-01099",
             "INTEL-SA-01103",
-            "INTEL-SA-01111"
+            "INTEL-SA-01111",
+            "INTEL-SA-01192",
+            "INTEL-SA-01245",
+            "INTEL-SA-01312",
+            "INTEL-SA-01313"
           ]
         }
       ]
     },
-    "signature": "46d4fcf348e52df5c6d7f97714f059b618d1695c4bcd09cd9fc9875c5e4fce1b1dfc5aff1f6b1bbdca1b1d8d6e2174423f9706b74820fd9c8c0deaf8d55dc22e"
+    "signature": "327b195f281491a66be0c4db23dff2c1dd2b4216a91f3e00024c1a8ab1aef252d878de572a555f8cde7e92cc3c8deb87f8d4aca609185217db73deeda7fb65ac"
   },
   {
     "tcbInfo": {
       "id": "SGX",
       "version": 3,
-      "issueDate": "2025-08-13T01:01:28Z",
-      "nextUpdate": "2025-09-12T01:01:28Z",
+      "issueDate": "2025-08-14T01:01:48Z",
+      "nextUpdate": "2025-09-13T01:01:48Z",
       "fmspc": "20906EC10000",
       "pceId": "0000",
       "tcbType": 0,
-      "tcbEvaluationDataNumber": 19,
+      "tcbEvaluationDataNumber": 20,
       "tcbLevels": [
         {
           "tcb": {
@@ -26487,7 +29058,7 @@
             ],
             "pcesvn": 13
           },
-          "tcbDate": "2025-05-14T00:00:00Z",
+          "tcbDate": "2025-08-13T00:00:00Z",
           "tcbStatus": "SWHardeningNeeded",
           "advisoryIDs": [
             "INTEL-SA-00334",
@@ -26548,7 +29119,7 @@
             ],
             "pcesvn": 13
           },
-          "tcbDate": "2025-05-14T00:00:00Z",
+          "tcbDate": "2025-08-13T00:00:00Z",
           "tcbStatus": "ConfigurationAndSWHardeningNeeded",
           "advisoryIDs": [
             "INTEL-SA-00161",
@@ -27922,19 +30493,87 @@
         }
       ]
     },
-    "signature": "302232deb44d85644c78ada32bc51b897a85cec0c52f5d24433fe74aa6f1465526b0f4bbf25b7c2a9d545a8e6e323d2c4398711bbe540f8e61834e15bdbbef0b"
+    "signature": "b7be8277a48ac57fe945bc03650af0b2c62a1e0eedf3db8825d6b018221c8f33b44472efe6fe05afeb560b81292ff0ee4626567eeb1d3b90157a4ec20e72ab5f"
   },
   {
     "tcbInfo": {
       "id": "SGX",
       "version": 3,
-      "issueDate": "2025-08-13T00:31:42Z",
-      "nextUpdate": "2025-09-12T00:31:42Z",
+      "issueDate": "2025-08-14T01:02:02Z",
+      "nextUpdate": "2025-09-13T01:02:02Z",
       "fmspc": "90C06F000000",
       "pceId": "0000",
       "tcbType": 0,
-      "tcbEvaluationDataNumber": 19,
+      "tcbEvaluationDataNumber": 20,
       "tcbLevels": [
+        {
+          "tcb": {
+            "sgxtcbcomponents": [
+              {
+                "svn": 4,
+                "category": "BIOS",
+                "type": "Early Microcode Update"
+              },
+              {
+                "svn": 4,
+                "category": "OS/VMM",
+                "type": "SGX Late Microcode Update"
+              },
+              {
+                "svn": 2,
+                "category": "OS/VMM",
+                "type": "TXT SINIT"
+              },
+              {
+                "svn": 2,
+                "category": "BIOS"
+              },
+              {
+                "svn": 4,
+                "category": "BIOS"
+              },
+              {
+                "svn": 1,
+                "category": "BIOS"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 3,
+                "category": "OS/VMM",
+                "type": "SEAMLDR ACM"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              }
+            ],
+            "pcesvn": 13
+          },
+          "tcbDate": "2025-08-13T00:00:00Z",
+          "tcbStatus": "UpToDate"
+        },
         {
           "tcb": {
             "sgxtcbcomponents": [
@@ -28001,7 +30640,10 @@
             "pcesvn": 13
           },
           "tcbDate": "2025-05-14T00:00:00Z",
-          "tcbStatus": "UpToDate"
+          "tcbStatus": "OutOfDate",
+          "advisoryIDs": [
+            "INTEL-SA-01313"
+          ]
         },
         {
           "tcb": {
@@ -28073,7 +30715,8 @@
           "advisoryIDs": [
             "INTEL-SA-01079",
             "INTEL-SA-01103",
-            "INTEL-SA-01111"
+            "INTEL-SA-01111",
+            "INTEL-SA-01313"
           ]
         },
         {
@@ -28160,23 +30803,24 @@
             "INTEL-SA-00837",
             "INTEL-SA-01079",
             "INTEL-SA-01103",
-            "INTEL-SA-01111"
+            "INTEL-SA-01111",
+            "INTEL-SA-01313"
           ]
         }
       ]
     },
-    "signature": "21f390efc848e19775ad620e6670417338252ca28efb75ec43395fd1e773ecbd7b567db458b4fe85590192f0f518e3a26f5ad266b6685106ee93f89a8aae144f"
+    "signature": "466e07b548c4b416cef5eee21ceafbae6bf3289f1ecae77cbe0fb8606a2f222a1d8d459dae99f1d460f8f018ff310dd44e10dce7b97925014a53a1e511b593a0"
   },
   {
     "tcbInfo": {
       "id": "TDX",
       "version": 3,
-      "issueDate": "2025-08-13T00:31:42Z",
-      "nextUpdate": "2025-09-12T00:31:42Z",
+      "issueDate": "2025-08-14T01:02:01Z",
+      "nextUpdate": "2025-09-13T01:02:01Z",
       "fmspc": "90C06F000000",
       "pceId": "0000",
       "tcbType": 0,
-      "tcbEvaluationDataNumber": 19,
+      "tcbEvaluationDataNumber": 20,
       "tdxModule": {
         "mrsigner": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
         "attributes": "0000000000000000",
@@ -28191,10 +30835,17 @@
           "tcbLevels": [
             {
               "tcb": {
+                "isvsvn": 5
+              },
+              "tcbDate": "2025-08-13T00:00:00Z",
+              "tcbStatus": "UpToDate"
+            },
+            {
+              "tcb": {
                 "isvsvn": 3
               },
               "tcbDate": "2025-05-14T00:00:00Z",
-              "tcbStatus": "UpToDate"
+              "tcbStatus": "OutOfDate"
             }
           ]
         },
@@ -28206,10 +30857,17 @@
           "tcbLevels": [
             {
               "tcb": {
+                "isvsvn": 11
+              },
+              "tcbDate": "2025-08-13T00:00:00Z",
+              "tcbStatus": "UpToDate"
+            },
+            {
+              "tcb": {
                 "isvsvn": 6
               },
               "tcbDate": "2025-05-14T00:00:00Z",
-              "tcbStatus": "UpToDate"
+              "tcbStatus": "OutOfDate"
             },
             {
               "tcb": {
@@ -28237,6 +30895,130 @@
         }
       ],
       "tcbLevels": [
+        {
+          "tcb": {
+            "sgxtcbcomponents": [
+              {
+                "svn": 4,
+                "category": "BIOS",
+                "type": "Early Microcode Update"
+              },
+              {
+                "svn": 4,
+                "category": "OS/VMM",
+                "type": "SGX Late Microcode Update"
+              },
+              {
+                "svn": 2,
+                "category": "OS/VMM",
+                "type": "TXT SINIT"
+              },
+              {
+                "svn": 2,
+                "category": "BIOS"
+              },
+              {
+                "svn": 4,
+                "category": "BIOS"
+              },
+              {
+                "svn": 1,
+                "category": "BIOS"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 5,
+                "category": "OS/VMM",
+                "type": "SEAMLDR ACM"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              }
+            ],
+            "pcesvn": 13,
+            "tdxtcbcomponents": [
+              {
+                "svn": 5,
+                "category": "OS/VMM",
+                "type": "TDX Module"
+              },
+              {
+                "svn": 0,
+                "category": "OS/VMM",
+                "type": "TDX Module"
+              },
+              {
+                "svn": 4,
+                "category": "OS/VMM",
+                "type": "TDX Late Microcode Update"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              }
+            ]
+          },
+          "tcbDate": "2025-08-13T00:00:00Z",
+          "tcbStatus": "UpToDate"
+        },
         {
           "tcb": {
             "sgxtcbcomponents": [
@@ -28359,7 +31141,13 @@
             ]
           },
           "tcbDate": "2025-05-14T00:00:00Z",
-          "tcbStatus": "UpToDate"
+          "tcbStatus": "OutOfDate",
+          "advisoryIDs": [
+            "INTEL-SA-01192",
+            "INTEL-SA-01245",
+            "INTEL-SA-01312",
+            "INTEL-SA-01313"
+          ]
         },
         {
           "tcb": {
@@ -28489,7 +31277,11 @@
             "INTEL-SA-01079",
             "INTEL-SA-01099",
             "INTEL-SA-01103",
-            "INTEL-SA-01111"
+            "INTEL-SA-01111",
+            "INTEL-SA-01192",
+            "INTEL-SA-01245",
+            "INTEL-SA-01312",
+            "INTEL-SA-01313"
           ]
         },
         {
@@ -28634,24 +31426,96 @@
             "INTEL-SA-01079",
             "INTEL-SA-01099",
             "INTEL-SA-01103",
-            "INTEL-SA-01111"
+            "INTEL-SA-01111",
+            "INTEL-SA-01192",
+            "INTEL-SA-01245",
+            "INTEL-SA-01312",
+            "INTEL-SA-01313"
           ]
         }
       ]
     },
-    "signature": "954937287e4db69690b4d07c075cf009a2d65030f9550de78e2d21144835b692bb619179e1cf19cd876b5425b705ab501450feca9f62aec3157cf03fe9772628"
+    "signature": "973ed98be87a0ce9cb3afa006641799670eb6ab92f61a1008a36125bf8ab234514f9c43bff104ead654e6444347777ded09e35c9c02f34fbe2f034f5a0b1ec80"
   },
   {
     "tcbInfo": {
       "id": "SGX",
       "version": 3,
-      "issueDate": "2025-08-13T01:01:39Z",
-      "nextUpdate": "2025-09-12T01:01:39Z",
+      "issueDate": "2025-08-14T01:01:58Z",
+      "nextUpdate": "2025-09-13T01:01:58Z",
       "fmspc": "00806F000000",
       "pceId": "0000",
       "tcbType": 0,
-      "tcbEvaluationDataNumber": 19,
+      "tcbEvaluationDataNumber": 20,
       "tcbLevels": [
+        {
+          "tcb": {
+            "sgxtcbcomponents": [
+              {
+                "svn": 9,
+                "category": "BIOS",
+                "type": "Early Microcode Update"
+              },
+              {
+                "svn": 9,
+                "category": "OS/VMM",
+                "type": "SGX Late Microcode Update"
+              },
+              {
+                "svn": 2,
+                "category": "OS/VMM",
+                "type": "TXT SINIT"
+              },
+              {
+                "svn": 2,
+                "category": "BIOS"
+              },
+              {
+                "svn": 4,
+                "category": "BIOS"
+              },
+              {
+                "svn": 1,
+                "category": "BIOS"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 255,
+                "category": "OS/VMM",
+                "type": "SEAMLDR ACM"
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              },
+              {
+                "svn": 0
+              }
+            ],
+            "pcesvn": 11
+          },
+          "tcbDate": "2025-08-13T00:00:00Z",
+          "tcbStatus": "UpToDate"
+        },
         {
           "tcb": {
             "sgxtcbcomponents": [
@@ -28718,7 +31582,10 @@
             "pcesvn": 11
           },
           "tcbDate": "2025-05-14T00:00:00Z",
-          "tcbStatus": "UpToDate"
+          "tcbStatus": "OutOfDate",
+          "advisoryIDs": [
+            "INTEL-SA-01313"
+          ]
         },
         {
           "tcb": {
@@ -28790,7 +31657,8 @@
           "advisoryIDs": [
             "INTEL-SA-01079",
             "INTEL-SA-01103",
-            "INTEL-SA-01111"
+            "INTEL-SA-01111",
+            "INTEL-SA-01313"
           ]
         },
         {
@@ -28866,7 +31734,8 @@
             "INTEL-SA-00986",
             "INTEL-SA-01079",
             "INTEL-SA-01103",
-            "INTEL-SA-01111"
+            "INTEL-SA-01111",
+            "INTEL-SA-01313"
           ]
         },
         {
@@ -28943,7 +31812,8 @@
             "INTEL-SA-00986",
             "INTEL-SA-01079",
             "INTEL-SA-01103",
-            "INTEL-SA-01111"
+            "INTEL-SA-01111",
+            "INTEL-SA-01313"
           ]
         },
         {
@@ -29033,23 +31903,24 @@
             "INTEL-SA-00986",
             "INTEL-SA-01079",
             "INTEL-SA-01103",
-            "INTEL-SA-01111"
+            "INTEL-SA-01111",
+            "INTEL-SA-01313"
           ]
         }
       ]
     },
-    "signature": "b0f5b25ac5bd2e790049a5805462c07ea2c52af751592acf1b7a6c11f537c829a6b427b1661e6238ec864d8964cb8b2f8dc828cad4ad5f9d2daa51d381b00ad4"
+    "signature": "171124dee762c801bbb1f22549da34cf7b3f0cca3ce42cba3ba89230d02ed87e6b1ac77277f768ad076dcdc9308834acb2145d2e44c6fc11c406d03b0430ff3e"
   },
   {
     "tcbInfo": {
       "id": "SGX",
       "version": 3,
-      "issueDate": "2025-08-13T01:01:29Z",
-      "nextUpdate": "2025-09-12T01:01:29Z",
+      "issueDate": "2025-08-14T01:01:48Z",
+      "nextUpdate": "2025-09-13T01:01:48Z",
       "fmspc": "00906EB10000",
       "pceId": "0000",
       "tcbType": 0,
-      "tcbEvaluationDataNumber": 19,
+      "tcbEvaluationDataNumber": 20,
       "tcbLevels": [
         {
           "tcb": {
@@ -29105,7 +31976,7 @@
             ],
             "pcesvn": 13
           },
-          "tcbDate": "2025-05-14T00:00:00Z",
+          "tcbDate": "2025-08-13T00:00:00Z",
           "tcbStatus": "SWHardeningNeeded",
           "advisoryIDs": [
             "INTEL-SA-00334",
@@ -29166,7 +32037,7 @@
             ],
             "pcesvn": 13
           },
-          "tcbDate": "2025-05-14T00:00:00Z",
+          "tcbDate": "2025-08-13T00:00:00Z",
           "tcbStatus": "ConfigurationAndSWHardeningNeeded",
           "advisoryIDs": [
             "INTEL-SA-00161",
@@ -30621,18 +33492,18 @@
         }
       ]
     },
-    "signature": "554269b782b5b180b366bfbbb429fed41d37715bdfb5f7f82b3efad8dd6a2360d6691c2ef64cbbcdae8fcd3a8f1937edb43fe9430794e101952450da3e12d18d"
+    "signature": "e52778ea3f49ab6c22dd7c35f5baf3c45b23acb8fc2504bbf4f09d4c275f269d8a8d404eeed66e52803ab3a9a588a13e1f427c7ec3b173141903aca6b814ff7e"
   },
   {
     "tcbInfo": {
       "id": "SGX",
       "version": 3,
-      "issueDate": "2025-08-13T01:02:08Z",
-      "nextUpdate": "2025-09-12T01:02:08Z",
+      "issueDate": "2025-08-14T01:32:29Z",
+      "nextUpdate": "2025-09-13T01:32:29Z",
       "fmspc": "00606A000000",
       "pceId": "0000",
       "tcbType": 0,
-      "tcbEvaluationDataNumber": 19,
+      "tcbEvaluationDataNumber": 20,
       "tcbLevels": [
         {
           "tcb": {
@@ -30695,7 +33566,7 @@
             ],
             "pcesvn": 13
           },
-          "tcbDate": "2025-05-14T00:00:00Z",
+          "tcbDate": "2025-08-13T00:00:00Z",
           "tcbStatus": "SWHardeningNeeded",
           "advisoryIDs": [
             "INTEL-SA-00615"
@@ -30762,7 +33633,7 @@
             ],
             "pcesvn": 13
           },
-          "tcbDate": "2025-05-14T00:00:00Z",
+          "tcbDate": "2025-08-13T00:00:00Z",
           "tcbStatus": "ConfigurationAndSWHardeningNeeded",
           "advisoryIDs": [
             "INTEL-SA-00657",
@@ -31757,6 +34628,6 @@
         }
       ]
     },
-    "signature": "17ee4c847ac4bff45dc2cbcb75df3a977b135184f68b43f94910762b88524bc9bb9deb04c141f7d6d18b4a46249eb5cc075e642adfb7ed30dcdafe2b49586958"
+    "signature": "8c873ca2990ba84b36003a71cceb4559929bb0a0158bb00a9b900bc5631d01023bee20b3329178f0e85e84c43cbafeaf15f4bd28f1fc66a3075bac3f9a922d2a"
   }
 ]
