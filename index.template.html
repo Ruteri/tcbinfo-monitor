@@ -1,0 +1,267 @@
+<html>
+<head>
+	<title>TCB Change Log</title>
+	<style>
+		body {
+			font-family: 'Courier New', Courier, monospace;
+			background-color: #000;
+			color: #0f0;
+			margin: 0;
+			padding: 20px;
+			line-height: 1.5;
+		}
+		h1, h2 {
+			color: #ff00ff;
+			text-shadow: 2px 2px 0 #00ffff;
+		}
+		pre {
+			background-color: #111;
+			border: 1px solid #0f0;
+			padding: 10px;
+			overflow: auto;
+			white-space: pre-wrap; /* Wrap long lines */
+		}
+		ul {
+			list-style-type: none; /* Remove default bullets */
+			padding-left: 0; /* Remove default padding */
+		}
+		li {
+			margin-bottom: 10px;
+			padding: 5px;
+			border: 1px dashed #0f0;
+			background-color: rgba(0, 255, 0, 0.1);
+		}
+		li:hover {
+			background-color: rgba(0, 255, 0, 0.3);
+		}
+		#search-container {
+			position: sticky;
+			top: 0;
+			background-color: #000;
+			padding: 10px 0 15px 0;
+			z-index: 10;
+			border-bottom: 1px solid #0f0;
+			margin-bottom: 15px;
+		}
+		#fmspc-search {
+			font-family: 'Courier New', Courier, monospace;
+			font-size: 16px;
+			padding: 8px 12px;
+			background-color: #111;
+			color: #0f0;
+			border: 1px solid #0f0;
+			width: 300px;
+		}
+		#fmspc-search::placeholder {
+			color: #070;
+		}
+		#fmspc-search:focus {
+			outline: none;
+			border-color: #ff00ff;
+			box-shadow: 0 0 5px #ff00ff;
+		}
+		#search-status {
+			margin-left: 10px;
+			color: #0f0;
+		}
+		#tcb-current {
+			display: none;
+			margin-bottom: 20px;
+			border: 1px solid #ff00ff;
+			padding: 15px;
+			background-color: #0a0a0a;
+		}
+		#tcb-current h2 {
+			margin-top: 0;
+		}
+		#tcb-current pre {
+			border-color: #ff00ff;
+		}
+		#tcb-current table {
+			border-collapse: collapse;
+			width: 100%;
+			margin: 10px 0;
+		}
+		#tcb-current th, #tcb-current td {
+			border: 1px solid #0f0;
+			padding: 4px 8px;
+			text-align: left;
+		}
+		#tcb-current th {
+			background-color: #1a1a1a;
+			color: #ff00ff;
+		}
+		#tcb-current .status-UpToDate { color: #0f0; }
+		#tcb-current .status-OutOfDate { color: #f00; }
+		#tcb-current .status-Revoked { color: #f00; font-weight: bold; }
+		#tcb-current .status-ConfigurationNeeded { color: #ff0; }
+		#tcb-current .status-ConfigurationAndSWHardeningNeeded { color: #ff0; }
+		#tcb-current .status-SWHardeningNeeded { color: #ff0; }
+		.diff-entry.hidden {
+			display: none;
+		}
+	</style>
+</head>
+<body>
+<div id="search-container">
+	<input type="text" id="fmspc-search" placeholder="Search by FMSPC..." />
+	<span id="search-status"></span>
+</div>
+<div id="tcb-current"></div>
+<div id="diff-entries">
+<!-- DIFF_ENTRIES -->
+</div>
+<script>
+var TCB_DATA = /* TCB_DATA_JSON */null;
+</script>
+<script>
+(function() {
+	var searchInput = document.getElementById('fmspc-search');
+	var searchStatus = document.getElementById('search-status');
+	var tcbCurrent = document.getElementById('tcb-current');
+	var entries = document.querySelectorAll('.diff-entry');
+	var tcbsData = TCB_DATA;
+
+	// Save original pre content for each entry so we can restore it
+	var originalPre = [];
+	for (var i = 0; i < entries.length; i++) {
+		var pre = entries[i].querySelector('pre');
+		originalPre.push(pre ? pre.textContent : '');
+	}
+
+	function filterPreContent(text, query) {
+		var lines = text.split('\n');
+		var entries = []; // {type: 'header'|'item', lines: []}
+		var current = null;
+
+		for (var i = 0; i < lines.length; i++) {
+			var line = lines[i];
+			if (line.indexOf('### ') === 0) {
+				current = {type: 'header', lines: [line]};
+				entries.push(current);
+			} else if (line.indexOf('- **') === 0) {
+				current = {type: 'item', lines: [line]};
+				entries.push(current);
+			} else if (current) {
+				current.lines.push(line);
+			}
+		}
+
+		// Mark items that match
+		for (var i = 0; i < entries.length; i++) {
+			if (entries[i].type === 'item') {
+				entries[i].matches = entries[i].lines[0].toUpperCase().indexOf(query) !== -1;
+			}
+		}
+
+		// Build filtered output: include headers only if they have matching items
+		var result = [];
+		for (var i = 0; i < entries.length; i++) {
+			if (entries[i].type === 'header') {
+				var hasMatch = false;
+				for (var j = i + 1; j < entries.length; j++) {
+					if (entries[j].type === 'header') break;
+					if (entries[j].matches) { hasMatch = true; break; }
+				}
+				if (hasMatch) result.push(entries[i].lines.join('\n'));
+			} else if (entries[i].matches) {
+				result.push(entries[i].lines.join('\n'));
+			}
+		}
+
+		return result.join('\n');
+	}
+
+	function escapeHtml(s) {
+		return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+	}
+
+	function formatSvns(components) {
+		if (!components) return '';
+		return components.map(function(c) { return c.svn; }).join(', ');
+	}
+
+	function renderTcbSummary(matches, query) {
+		var html = '<h2>Current TCB for FMSPC ' + escapeHtml(query) + '</h2>';
+		for (var i = 0; i < matches.length; i++) {
+			var info = matches[i].tcbInfo;
+			var isTdx = info.id === 'TDX';
+			html += '<h3>' + escapeHtml(info.id) + '</h3>';
+			html += '<p>pceId: ' + escapeHtml(info.pceId) +
+				' &middot; tcbType: ' + info.tcbType +
+				' &middot; evaluationDataNumber: ' + info.tcbEvaluationDataNumber + '</p>';
+			html += '<table><tr><th>Status</th><th>Date</th><th>SGX SVNs</th><th>pcesvn</th>';
+			if (isTdx) html += '<th>TDX SVNs</th>';
+			html += '<th>Advisories</th></tr>';
+			var levels = info.tcbLevels || [];
+			for (var j = 0; j < levels.length; j++) {
+				var lvl = levels[j];
+				var cls = 'status-' + (lvl.tcbStatus || '').replace(/\s+/g, '');
+				var advisories = (lvl.advisoryIDs || []).join(', ');
+				var sgxSvns = formatSvns(lvl.tcb.sgxtcbcomponents);
+				var pcesvn = lvl.tcb.pcesvn != null ? lvl.tcb.pcesvn : '';
+				html += '<tr>' +
+					'<td class="' + cls + '">' + escapeHtml(lvl.tcbStatus || '') + '</td>' +
+					'<td>' + escapeHtml((lvl.tcbDate || '').replace('T00:00:00Z', '')) + '</td>' +
+					'<td>' + escapeHtml(sgxSvns) + '</td>' +
+					'<td>' + pcesvn + '</td>';
+				if (isTdx) html += '<td>' + escapeHtml(formatSvns(lvl.tcb.tdxtcbcomponents)) + '</td>';
+				html += '<td>' + escapeHtml(advisories) + '</td>' +
+					'</tr>';
+			}
+			html += '</table>';
+		}
+		return html;
+	}
+
+	searchInput.addEventListener('input', function() {
+		var query = searchInput.value.trim().toUpperCase();
+
+		if (!query) {
+			searchStatus.textContent = '';
+			tcbCurrent.style.display = 'none';
+			tcbCurrent.innerHTML = '';
+			for (var i = 0; i < entries.length; i++) {
+				entries[i].classList.remove('hidden');
+				var pre = entries[i].querySelector('pre');
+				if (pre) pre.textContent = originalPre[i];
+			}
+			return;
+		}
+
+		// Filter diff entries line-by-line
+		var shown = 0;
+		for (var i = 0; i < entries.length; i++) {
+			var filtered = filterPreContent(originalPre[i], query);
+			if (filtered.trim()) {
+				entries[i].classList.remove('hidden');
+				var pre = entries[i].querySelector('pre');
+				if (pre) pre.textContent = filtered;
+				shown++;
+			} else {
+				entries[i].classList.add('hidden');
+			}
+		}
+		searchStatus.textContent = shown + ' of ' + entries.length + ' entries';
+
+		// Show compact TCB summary
+		if (tcbsData) {
+			var matches = [];
+			for (var i = 0; i < tcbsData.length; i++) {
+				if (tcbsData[i].tcbInfo.fmspc.toUpperCase() === query) {
+					matches.push(tcbsData[i]);
+				}
+			}
+			if (matches.length > 0) {
+				tcbCurrent.innerHTML = renderTcbSummary(matches, query);
+				tcbCurrent.style.display = 'block';
+			} else {
+				tcbCurrent.style.display = 'none';
+				tcbCurrent.innerHTML = '';
+			}
+		}
+	});
+})();
+</script>
+</body>
+</html>
