@@ -29,11 +29,12 @@ def get_changed_fmspcs(diff):
 
 
 def build_slack_message(changed_watched):
-    lines = [":rotating_light: *TCB changes detected for watched FMSPCs:*\n"]
+    lines = []
     for fmspc in sorted(changed_watched):
-        link = f"{SITE_URL}?fmspc={fmspc}"
-        lines.append(f"\u2022 <{link}|{fmspc}>")
-    return "\n".join(lines)
+        lines.append(f":warning: TCB update: FMSPC {fmspc} changed")
+        lines.append(f"{SITE_URL}?fmspc={fmspc}")
+        lines.append("")
+    return "\n".join(lines).rstrip()
 
 
 def main():
