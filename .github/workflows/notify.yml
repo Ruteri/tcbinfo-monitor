@@ -1,0 +1,60 @@
+name: Slack Notification
+
+on:
+  workflow_run:
+    workflows: ["Daily JSON Update"]
+    types: [completed]
+  workflow_dispatch:
+    inputs:
+      commit:
+        description: 'TCB update commit to notify for (must have tcbs.json change)'
+        required: true
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      github.event.workflow_run.conclusion == 'success'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Resolve commit
+        id: resolve
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "ref=${{ inputs.commit }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "ref=HEAD" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Check for tcbs.json changes
+        id: check
+        run: |
+          REF="${{ steps.resolve.outputs.ref }}"
+          if git diff --name-only "${REF}~1" "${REF}" | grep -q '^tcbs\.json$'; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/setup-python@v5
+        if: steps.check.outputs.changed == 'true'
+        with:
+          python-version: '3.10'
+          cache: 'pip'
+      - run: pip install -r requirements.txt
+        if: steps.check.outputs.changed == 'true'
+
+      - name: Send Slack notification
+        if: steps.check.outputs.changed == 'true'
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          WATCHED_FMSPCS: ${{ secrets.WATCHED_FMSPCS }}
+        run: |
+          REF="${{ steps.resolve.outputs.ref }}"
+          git show "${REF}~1:tcbs.json" > old_tcbs.json
+          git show "${REF}:tcbs.json" > new_tcbs.json
+          python notify_slack.py old_tcbs.json new_tcbs.json

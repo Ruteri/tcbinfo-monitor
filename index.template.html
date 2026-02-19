@@ -261,6 +261,14 @@ var TCB_DATA = /* TCB_DATA_JSON */null;
 			}
 		}
 	});
+
+	// Auto-search from URL query parameter
+	var params = new URLSearchParams(window.location.search);
+	var fmspcParam = params.get('fmspc');
+	if (fmspcParam) {
+		searchInput.value = fmspcParam;
+		searchInput.dispatchEvent(new Event('input'));
+	}
 })();
 </script>
 </body>

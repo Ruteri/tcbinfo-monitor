@@ -50144,6 +50144,14 @@ var TCB_DATA = [
 			}
 		}
 	});
+
+	// Auto-search from URL query parameter
+	var params = new URLSearchParams(window.location.search);
+	var fmspcParam = params.get('fmspc');
+	if (fmspcParam) {
+		searchInput.value = fmspcParam;
+		searchInput.dispatchEvent(new Event('input'));
+	}
 })();
 </script>
 </body>
