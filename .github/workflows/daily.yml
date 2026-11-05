@@ -7,6 +7,8 @@ on:
 jobs:
   update-json:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -36,29 +38,29 @@ jobs:
         id: check_diff
         run: |
           if cmp --silent -- new_tcbs.json tcbs.json; then
-            echo "differences=false" >> $GITHUB_ENV
+            echo "differences=false" >> "$GITHUB_ENV"
           else
-            echo "differences=true" >> $GITHUB_ENV
+            echo "differences=true" >> "$GITHUB_ENV"
           fi
 
       - name: Generate diffs HTML
+        id: generate_diff
         if: env.differences == 'true'
         run: |
           mkdir -p diffs
           cdate=$(date +%Y-%m-%d)
-          python generate_diff_html.py tcbs.json new_tcbs.json > diffs/${cdate}.html || rm diffs/${cdate}.html # exits with (1) if no changes, in which case remove the file
+          echo "date=$cdate" >> "$GITHUB_OUTPUT"
+          python generate_diff_html.py tcbs.json new_tcbs.json > "diffs/${cdate}.html" || rm "diffs/${cdate}.html" # exits with (1) if no changes, in which case remove the file
           mv new_tcbs.json tcbs.json
           python generate_index.py > index.html
 
-      - name: Create Pull Request
+      - name: Commit TCB update
         if: env.differences == 'true'
-        id: create_pr
-        run: |
-          cdate=$(date +%Y-%m-%d)
-          git config --local user.email "bot@daily.com"
-          git config --local user.name "Daily Bot"
-          git add tcbs.json
-          git add diffs/* || true
-          git add index.html
-          git commit -m "TCB update ${cdate}"
-          git push origin HEAD:main
+        uses: iarekylew00t/verified-bot-commit@1ee4374942e5c5f814e9b3121d766cbe45cea360 # v2.3.6
+        with:
+          ref: refs/heads/main
+          message: 'TCB update ${{ steps.generate_diff.outputs.date }}'
+          files: |
+            tcbs.json
+            index.html
+            diffs/**
